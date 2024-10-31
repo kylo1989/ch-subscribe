@@ -112,7 +112,6 @@ proxy-groups:
   - name: 📺 巴哈姆特
     type: select
     proxies:
-      - 🇨🇳 台湾节点
       - 🚀 节点选择
       - RN-CHEN-CDN
       - RN-CHEN
@@ -127,7 +126,7 @@ proxy-groups:
   - name: 📺 哔哩哔哩
     type: select
     proxies:
-      - 🎯 全球直连
+      - DIRECT
       - RN-CHEN-CDN
       - RN-CHEN
       - RN
