@@ -166,8 +166,8 @@ proxy-groups:
   - name: 📢 谷歌FCM
     type: select
     proxies:
-      - DIRECT
       - 🚀 节点选择
+      - DIRECT
       - RN-CHEN-CDN
       - RN-CHEN
       - RN
