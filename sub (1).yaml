@@ -18,12 +18,14 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
+      - RN-CHEN-CDN
+      - RN-CHEN
+      - RN
+      - RN-CDN
+      - 香港LC
+      - 香港LC-CDN
+      - DC-02
+      - DC-02-CDN
       - 🚀 手动切换
       - DIRECT
   - name: 🚀 手动切换
@@ -44,6 +46,15 @@ proxy-groups:
     tolerance: 50
     proxies:
       - RN-CHEN-CDN
+      - RN-CDN
+      - 香港LC-CDN
+      - DC-02-CDN
+  - name: 📲 电报消息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - RN-CHEN-CDN
       - RN-CHEN
       - RN
       - RN-CDN
@@ -51,17 +62,6 @@ proxy-groups:
       - 香港LC-CDN
       - DC-02
       - DC-02-CDN
-  - name: 📲 电报消息
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🇸🇬 狮城节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
       - 🚀 手动切换
       - DIRECT
   - name: 💬 OpenAi
@@ -69,12 +69,14 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
-      - 🇸🇬 狮城节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
+      - RN-CHEN-CDN
+      - RN-CHEN
+      - RN
+      - RN-CDN
+      - 香港LC
+      - 香港LC-CDN
+      - DC-02
+      - DC-02-CDN
       - 🚀 手动切换
       - DIRECT
   - name: 📹 油管视频
@@ -82,26 +84,29 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
-      - 🇸🇬 狮城节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
+      - RN-CHEN-CDN
+      - RN-CHEN
+      - RN
+      - RN-CDN
+      - 香港LC
+      - 香港LC-CDN
+      - DC-02
+      - DC-02-CDN
       - 🚀 手动切换
       - DIRECT
   - name: 🎥 奈飞视频
     type: select
     proxies:
-      - 🎥 奈飞节点
       - 🚀 节点选择
       - ♻️ 自动选择
-      - 🇸🇬 狮城节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
+      - RN-CHEN-CDN
+      - RN-CHEN
+      - RN
+      - RN-CDN
+      - 香港LC
+      - 香港LC-CDN
+      - DC-02
+      - DC-02-CDN
       - 🚀 手动切换
       - DIRECT
   - name: 📺 巴哈姆特
@@ -109,113 +114,152 @@ proxy-groups:
     proxies:
       - 🇨🇳 台湾节点
       - 🚀 节点选择
+      - RN-CHEN-CDN
+      - RN-CHEN
+      - RN
+      - RN-CDN
+      - 香港LC
+      - 香港LC-CDN
+      - DC-02
+      - DC-02-CDN
       - 🚀 手动切换
       - DIRECT
   - name: 📺 哔哩哔哩
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇨🇳 台湾节点
-      - 🇭🇰 香港节点
+      - RN-CHEN-CDN
+      - RN-CHEN
+      - RN
+      - RN-CDN
+      - 香港LC
+      - 香港LC-CDN
+      - DC-02
+      - DC-02-CDN
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
+      - RN-CHEN-CDN
+      - RN-CHEN
+      - RN
+      - RN-CDN
+      - 香港LC
+      - 香港LC-CDN
+      - DC-02
+      - DC-02-CDN
       - 🚀 手动切换
       - DIRECT
   - name: 🌏 国内媒体
     type: select
     proxies:
       - DIRECT
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
+      - RN-CHEN-CDN
+      - RN-CHEN
+      - RN
+      - RN-CDN
+      - 香港LC
+      - 香港LC-CDN
+      - DC-02
+      - DC-02-CDN
       - 🚀 手动切换
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - 🇺🇲 美国节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇰🇷 韩国节点
+      - RN-CHEN-CDN
+      - RN-CHEN
+      - RN
+      - RN-CDN
+      - 香港LC
+      - 香港LC-CDN
+      - DC-02
+      - DC-02-CDN
       - 🚀 手动切换
   - name: Ⓜ️ 微软Bing
     type: select
     proxies:
       - DIRECT
-      - 🚀 节点选择
-      - 🇺🇲 美国节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇰🇷 韩国节点
+      - RN-CHEN-CDN
+      - RN-CHEN
+      - RN
+      - RN-CDN
+      - 香港LC
+      - 香港LC-CDN
+      - DC-02
+      - DC-02-CDN
       - 🚀 手动切换
   - name: Ⓜ️ 微软云盘
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - 🇺🇲 美国节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇰🇷 韩国节点
+      - RN-CHEN-CDN
+      - RN-CHEN
+      - RN
+      - RN-CDN
+      - 香港LC
+      - 香港LC-CDN
+      - DC-02
+      - DC-02-CDN
       - 🚀 手动切换
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - 🇺🇲 美国节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇰🇷 韩国节点
+      - RN-CHEN-CDN
+      - RN-CHEN
+      - RN
+      - RN-CDN
+      - 香港LC
+      - 香港LC-CDN
+      - DC-02
+      - DC-02-CDN
       - 🚀 手动切换
   - name: 🍎 苹果服务
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - 🇺🇲 美国节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇰🇷 韩国节点
+      - RN-CHEN-CDN
+      - RN-CHEN
+      - RN
+      - RN-CDN
+      - 香港LC
+      - 香港LC-CDN
+      - DC-02
+      - DC-02-CDN
       - 🚀 手动切换
   - name: 🎮 游戏平台
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - 🇺🇲 美国节点
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇰🇷 韩国节点
+      - RN-CHEN-CDN
+      - RN-CHEN
+      - RN
+      - RN-CDN
+      - 香港LC
+      - 香港LC-CDN
+      - DC-02
+      - DC-02-CDN
       - 🚀 手动切换
   - name: 🎶 网易音乐
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
+      - RN-CHEN-CDN
+      - RN-CHEN
+      - RN
+      - RN-CDN
+      - 香港LC
+      - 香港LC-CDN
+      - DC-02
+      - DC-02-CDN
       - ♻️ 自动选择
   - name: 🎯 全球直连
     type: select
@@ -239,60 +283,16 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰 香港节点
-      - 🇨🇳 台湾节点
-      - 🇸🇬 狮城节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇰🇷 韩国节点
-      - 🚀 手动切换
-  - name: 🇭🇰 香港节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    proxies:
+      - RN-CHEN-CDN
+      - RN-CHEN
+      - RN
+      - RN-CDN
       - 香港LC
       - 香港LC-CDN
-  - name: 🇯🇵 日本节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    proxies:
-      - DIRECT
-  - name: 🇺🇲 美国节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 150
-    proxies:
-      - DIRECT
-  - name: 🇨🇳 台湾节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    proxies:
-      - DIRECT
-  - name: 🇸🇬 狮城节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    proxies:
-      - DIRECT
-  - name: 🇰🇷 韩国节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    proxies:
-      - DIRECT
-  - name: 🎥 奈飞节点
-    type: select
-    proxies:
-      - DIRECT
+      - DC-02
+      - DC-02-CDN
+      - 🚀 手动切换
+  
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
