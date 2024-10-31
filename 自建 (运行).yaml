@@ -22,7 +22,7 @@ proxies:
     headers:
       Host: lc.diaodada.uk
 - name: LC-CDN
-  server: cf.090227.xyz
+  server: rr.cloudflare.182682.xyz
   port: 8443
   type: vmess
   uuid: 62dd849c-0c29-4e46-8b40-c5f9feb3167a
