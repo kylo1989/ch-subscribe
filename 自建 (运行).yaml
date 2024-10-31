@@ -21,21 +21,6 @@ proxies:
     path: 62dd849c-0c29-4e46-8b40-c5f9feb3167a-vm
     headers:
       Host: lc.diaodada.uk
-- name: LC-CDN
-  server: rr.cloudflare.182682.xyz
-  port: 8443
-  type: vmess
-  uuid: 62dd849c-0c29-4e46-8b40-c5f9feb3167a
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  servername: lc.diaodada.uk
-  network: ws
-  ws-opts:
-    path: 62dd849c-0c29-4e46-8b40-c5f9feb3167a-vm
-    headers:
-      Host: lc.diaodada.uk
 - name: RN
   server: 192.3.41.174
   port: 2082
