@@ -4,7 +4,7 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
-Proxy:
+proxies:
   - {name: RN-CHEN-CDN, server: cah.cloudflare.182682.xyz, port: 8443, type: vmess, uuid: 899152a2-a0fd-4259-b48f-2d699a60a6ef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: cah.diaodada.uk, network: ws, ws-path: 899152a2-a0fd-4259-b48f-2d699a60a6ef-vm, ws-headers: {Host: cah.diaodada.uk}}
   - {name: RN-CHEN, server: 107.173.144.102, port: 2083, type: vmess, uuid: 899152a2-a0fd-4259-b48f-2d699a60a6ef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: cah.diaodada.uk, network: ws, ws-path: 899152a2-a0fd-4259-b48f-2d699a60a6ef-vm, ws-headers: {Host: cah.diaodada.uk}}
   - {name: RN, server: 192.3.41.174, port: 2082, type: vmess, uuid: 2cc65011-0d1e-4ef6-8e78-71520654e073, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: rn1.diaodada.uk, network: ws, ws-path: 2cc65011-0d1e-4ef6-8e78-71520654e073-vm, ws-headers: {Host: rn1.diaodada.uk}}
@@ -13,6 +13,8 @@ Proxy:
   - {name: 香港LC-CDN, server: rr.cloudflare.182682.xyz, port: 8443, type: vmess, uuid: 62dd849c-0c29-4e46-8b40-c5f9feb3167a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: lc.diaodada.uk, network: ws, ws-path: 62dd849c-0c29-4e46-8b40-c5f9feb3167a-vm, ws-headers: {Host: lc.diaodada.uk}}
   - {name: DC-02, server: 74.48.116.107, port: 2083, type: vmess, uuid: efc69f0d-7957-4afb-8b9d-95a263bb0dd1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: dc.diaodada.uk, network: ws, ws-path: efc69f0d-7957-4afb-8b9d-95a263bb0dd1-vm, ws-headers: {Host: dc.diaodada.uk}}
   - {name: DC-02-CDN, server: rr.cloudflare.182682.xyz, port: 8443, type: vmess, uuid: efc69f0d-7957-4afb-8b9d-95a263bb0dd1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: dc.diaodada.uk, network: ws, ws-path: efc69f0d-7957-4afb-8b9d-95a263bb0dd1-vm, ws-headers: {Host: dc.diaodada.uk}}
+
+proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
