@@ -111,7 +111,6 @@ Proxy Group:
   - name: 📺 巴哈姆特
     type: select
     proxies:
-      - 🚀 节点选择
       - ♻️ 自动选择
       - RN-CHEN-CDN
       - RN-CHEN
@@ -121,12 +120,10 @@ Proxy Group:
       - 香港LC-CDN
       - DC-02
       - DC-02-CDN
-      - 🚀 手动切换
       - DIRECT
   - name: 📺 哔哩哔哩
     type: select
     proxies:
-      - 🚀 节点选择
       - ♻️ 自动选择
       - RN-CHEN-CDN
       - RN-CHEN
@@ -136,12 +133,10 @@ Proxy Group:
       - 香港LC-CDN
       - DC-02
       - DC-02-CDN
-      - 🚀 手动切换
       - DIRECT
   - name: 🌍 国外媒体
     type: select
     proxies:
-      - 🚀 节点选择
       - ♻️ 自动选择
       - RN-CHEN-CDN
       - RN-CHEN
@@ -151,7 +146,6 @@ Proxy Group:
       - 香港LC-CDN
       - DC-02
       - DC-02-CDN
-      - 🚀 手动切换
       - DIRECT
   - name: 🌏 国内媒体
     type: select
@@ -165,12 +159,11 @@ Proxy Group:
       - 香港LC-CDN
       - DC-02
       - DC-02-CDN
-      - 🚀 手动切换
   - name: 📢 谷歌FCM
     type: select
     proxies:
+      - ♻️ 自动选择
       - DIRECT
-      - 🚀 节点选择
       - RN-CHEN-CDN
       - RN-CHEN
       - RN
@@ -179,12 +172,10 @@ Proxy Group:
       - 香港LC-CDN
       - DC-02
       - DC-02-CDN
-      - 🚀 手动切换
   - name: Ⓜ️ 微软Bing
     type: select
     proxies:
       - DIRECT
-      - 🚀 节点选择
       - RN-CHEN-CDN
       - RN-CHEN
       - RN
@@ -193,12 +184,10 @@ Proxy Group:
       - 香港LC-CDN
       - DC-02
       - DC-02-CDN
-      - 🚀 手动切换
   - name: Ⓜ️ 微软云盘
     type: select
     proxies:
       - DIRECT
-      - 🚀 节点选择
       - RN-CHEN-CDN
       - RN-CHEN
       - RN
@@ -207,12 +196,10 @@ Proxy Group:
       - 香港LC-CDN
       - DC-02
       - DC-02-CDN
-      - 🚀 手动切换
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - DIRECT
-      - 🚀 节点选择
       - RN-CHEN-CDN
       - RN-CHEN
       - RN
@@ -221,12 +208,10 @@ Proxy Group:
       - 香港LC-CDN
       - DC-02
       - DC-02-CDN
-      - 🚀 手动切换
   - name: 🍎 苹果服务
     type: select
     proxies:
       - DIRECT
-      - 🚀 节点选择
       - RN-CHEN-CDN
       - RN-CHEN
       - RN
@@ -235,12 +220,10 @@ Proxy Group:
       - 香港LC-CDN
       - DC-02
       - DC-02-CDN
-      - 🚀 手动切换
   - name: 🎮 游戏平台
     type: select
     proxies:
       - DIRECT
-      - 🚀 节点选择
       - RN-CHEN-CDN
       - RN-CHEN
       - RN
@@ -249,12 +232,10 @@ Proxy Group:
       - 香港LC-CDN
       - DC-02
       - DC-02-CDN
-      - 🚀 手动切换
   - name: 🎶 网易音乐
     type: select
     proxies:
       - DIRECT
-      - 🚀 节点选择
       - RN-CHEN-CDN
       - RN-CHEN
       - RN
@@ -268,7 +249,6 @@ Proxy Group:
     type: select
     proxies:
       - DIRECT
-      - 🚀 节点选择
       - RN-CHEN-CDN
       - RN-CHEN
       - RN
@@ -291,7 +271,6 @@ Proxy Group:
   - name: 🐟 漏网之鱼
     type: select
     proxies:
-      - 🚀 节点选择
       - RN-CHEN-CDN
       - RN-CHEN
       - RN
@@ -302,7 +281,6 @@ Proxy Group:
       - DC-02-CDN
       - ♻️ 自动选择
       - DIRECT
-      - 🚀 手动切换
 
 Rule:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
