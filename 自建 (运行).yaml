@@ -22,13 +22,14 @@ proxies:
     headers:
       Host: lc.diaodada.uk
 - name: LC-CDN
-  server: ct.090227.xyz
+  server: cf.090227.xyz
   port: 8443
   type: vmess
   uuid: 62dd849c-0c29-4e46-8b40-c5f9feb3167a
   alterId: 0
   cipher: auto
   tls: true
+  skip-cert-verify: false
   servername: lc.diaodada.uk
   network: ws
   ws-opts:
