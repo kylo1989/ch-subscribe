@@ -123,9 +123,14 @@ proxy-groups:
   type: select
   proxies:
   - "♻️ 自动选择"
+  - LC
   - LC-CDN
+  - RN
   - RN-CDN
   - RN-CHEN
+  - RN-CHEN-CDN
+  - RN-DC02
+  - RN-DC02-CDN
   - DIRECT
 - name: "☑️ 手动切换"
   type: select
