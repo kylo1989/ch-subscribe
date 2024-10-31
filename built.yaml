@@ -6,20 +6,48 @@ mode: rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-- name: LC-CDN
-  server: rr.cloudflare.182682.xyz
-  port: 8443
+- name: LC
+  server: 154.204.60.75
+  port: 11888
   type: vmess
-  uuid: 46ef43c2-2f90-489a-b463-cad4bf3e4ebf
+  uuid: 62dd849c-0c29-4e46-8b40-c5f9feb3167a
   alterId: 0
   cipher: auto
   tls: true
   servername: lc.diaodada.uk
   network: ws
   ws-opts:
-    path: 46ef43c2-2f90-489a-b463-cad4bf3e4ebf-vm
+    path: 62dd849c-0c29-4e46-8b40-c5f9feb3167a-vm
     headers:
       Host: lc.diaodada.uk
+- name: LC-CDN
+  server: rr.cloudflare.182682.xyz
+  port: 8443
+  type: vmess
+  uuid: 62dd849c-0c29-4e46-8b40-c5f9feb3167a
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: lc.diaodada.uk
+  network: ws
+  ws-opts:
+    path: 62dd849c-0c29-4e46-8b40-c5f9feb3167a-vm
+    headers:
+      Host: lc.diaodada.uk
+- name: RN
+  server: 192.3.41.174
+  port: 2082
+  type: vmess
+  uuid: 2cc65011-0d1e-4ef6-8e78-71520654e073
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: rn1.diaodada.uk
+  network: ws
+  ws-opts:
+    path: 2cc65011-0d1e-4ef6-8e78-71520654e073-vm
+    headers:
+      Host: rn1.diaodada.uk
 - name: RN-CDN
   server: rr.cloudflare.182682.xyz
   port: 8443
@@ -35,6 +63,20 @@ proxies:
     headers:
       Host: rn1.diaodada.uk
 - name: RN-CHEN
+  server: 107.173.144.102
+  port: 2083
+  type: vmess
+  uuid: 899152a2-a0fd-4259-b48f-2d699a60a6ef
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: cah.diaodada.uk
+  network: ws
+  ws-opts:
+    path: 899152a2-a0fd-4259-b48f-2d699a60a6ef-vm
+    headers:
+      Host: cah.diaodada.uk
+- name: RN-CHEN-CDN
   server: cah.cloudflare.182682.xyz
   port: 8443
   type: vmess
@@ -48,6 +90,34 @@ proxies:
     path: 899152a2-a0fd-4259-b48f-2d699a60a6ef-vm
     headers:
       Host: cah.diaodada.uk
+- name: RN-DC02
+  server: 74.48.116.107
+  port: 2083
+  type: vmess
+  uuid: efc69f0d-7957-4afb-8b9d-95a263bb0dd1
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: dc.diaodada.uk
+  network: ws
+  ws-opts:
+    path: efc69f0d-7957-4afb-8b9d-95a263bb0dd1-vm
+    headers:
+      Host: dc.diaodada.uk
+- name: RN-DC02-CDN
+  server: rr.cloudflare.182682.xyz
+  port: 8443
+  type: vmess
+  uuid: efc69f0d-7957-4afb-8b9d-95a263bb0dd1
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: dc.diaodada.uk
+  network: ws
+  ws-opts:
+    path: efc69f0d-7957-4afb-8b9d-95a263bb0dd1-vm
+    headers:
+      Host: dc.diaodada.uk
 proxy-groups:
 - name: "\U0001F680 节点选择"
   type: select
@@ -61,9 +131,14 @@ proxy-groups:
   type: select
   proxies:
   - "♻️ 自动选择"
+  - LC
   - LC-CDN
+  - RN
   - RN-CDN
   - RN-CHEN
+  - RN-CHEN-CDN
+  - RN-DC02
+  - RN-DC02-CDN
   - DIRECT
 - name: "♻️ 自动选择"
   type: url-test
@@ -74,13 +149,19 @@ proxy-groups:
   - LC-CDN
   - RN-CDN
   - RN-CHEN
+  - RN-DC02-CDN
 - name: "\U0001F4F2 电报消息"
   type: select
   proxies:
   - "♻️ 自动选择"
-  - RN-CDN
+  - LC
   - LC-CDN
+  - RN
+  - RN-CDN
   - RN-CHEN
+  - RN-CHEN-CDN
+  - RN-DC02
+  - RN-DC02-CDN
   - DIRECT
   - "☑️ 手动切换"
 - name: "\U0001F916 OpenAi"
@@ -88,134 +169,205 @@ proxy-groups:
   proxies:
   - "♻️ 自动选择"
   - RN-CDN
-  - LC-CDN
-  - RN-CHEN
+  - RN-CHEN-CDN
+  - RN-DC02
+  - RN-DC02-CDN
   - DIRECT
   - "☑️ 手动切换"
 - name: "\U0001F4F9 油管视频"
   type: select
   proxies:
   - "♻️ 自动选择"
-  - RN-CDN
+  - LC
   - LC-CDN
+  - RN
+  - RN-CDN
   - RN-CHEN
+  - RN-CHEN-CDN
+  - RN-DC02
+  - RN-DC02-CDN
   - DIRECT
   - "☑️ 手动切换"
 - name: "\U0001F3A5 奈飞视频"
   type: select
   proxies:
   - "♻️ 自动选择"
-  - RN-CDN
+  - LC
   - LC-CDN
+  - RN
+  - RN-CDN
   - RN-CHEN
+  - RN-CHEN-CDN
+  - RN-DC02
+  - RN-DC02-CDN
   - DIRECT
   - "☑️ 手动切换"
 - name: "\U0001F4FA 巴哈姆特"
   type: select
   proxies:
   - "♻️ 自动选择"
-  - RN-CDN
+  - LC
   - LC-CDN
+  - RN
+  - RN-CDN
   - RN-CHEN
+  - RN-CHEN-CDN
+  - RN-DC02
+  - RN-DC02-CDN
   - DIRECT
   - "☑️ 手动切换"
 - name: "\U0001F4FA 哔哩哔哩"
   type: select
   proxies:
   - "♻️ 自动选择"
-  - RN-CDN
+  - LC
   - LC-CDN
+  - RN
+  - RN-CDN
   - RN-CHEN
+  - RN-CHEN-CDN
+  - RN-DC02
+  - RN-DC02-CDN
   - DIRECT
   - "☑️ 手动切换"
 - name: "\U0001F30D 国外媒体"
   type: select
   proxies:
   - "♻️ 自动选择"
-  - RN-CDN
+  - LC
   - LC-CDN
+  - RN
+  - RN-CDN
   - RN-CHEN
+  - RN-CHEN-CDN
+  - RN-DC02
+  - RN-DC02-CDN
   - DIRECT
   - "☑️ 手动切换"
 - name: "\U0001F30F 国内媒体"
   type: select
   proxies:
   - "♻️ 自动选择"
-  - RN-CDN
+  - LC
   - LC-CDN
+  - RN
+  - RN-CDN
   - RN-CHEN
+  - RN-CHEN-CDN
+  - RN-DC02
+  - RN-DC02-CDN
   - DIRECT
   - "☑️ 手动切换"
 - name: "\U0001F4E2 谷歌FCM"
   type: select
   proxies:
   - "♻️ 自动选择"
-  - RN-CDN
+  - LC
   - LC-CDN
+  - RN
+  - RN-CDN
   - RN-CHEN
+  - RN-CHEN-CDN
+  - RN-DC02
+  - RN-DC02-CDN
   - DIRECT
   - "☑️ 手动切换"
 - name: Ⓜ️ 微软Bing
   type: select
   proxies:
   - "♻️ 自动选择"
-  - RN-CDN
+  - LC
   - LC-CDN
+  - RN
+  - RN-CDN
   - RN-CHEN
+  - RN-CHEN-CDN
+  - RN-DC02
+  - RN-DC02-CDN
   - DIRECT
   - "☑️ 手动切换"
 - name: Ⓜ️ 微软云盘
   type: select
   proxies:
   - "♻️ 自动选择"
-  - RN-CDN
+  - LC
   - LC-CDN
+  - RN
+  - RN-CDN
   - RN-CHEN
+  - RN-CHEN-CDN
+  - RN-DC02
+  - RN-DC02-CDN
   - DIRECT
   - "☑️ 手动切换"
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - "♻️ 自动选择"
-  - RN-CDN
+  - LC
   - LC-CDN
+  - RN
+  - RN-CDN
   - RN-CHEN
+  - RN-CHEN-CDN
+  - RN-DC02
+  - RN-DC02-CDN
   - DIRECT
   - "☑️ 手动切换"
 - name: "\U0001F34E 苹果服务"
   type: select
   proxies:
   - "♻️ 自动选择"
-  - RN-CDN
+  - LC
   - LC-CDN
+  - RN
+  - RN-CDN
   - RN-CHEN
+  - RN-CHEN-CDN
+  - RN-DC02
+  - RN-DC02-CDN
   - DIRECT
   - "☑️ 手动切换"
 - name: "\U0001F3AE 游戏平台"
   type: select
   proxies:
   - "♻️ 自动选择"
-  - RN-CDN
+  - LC
   - LC-CDN
+  - RN
+  - RN-CDN
   - RN-CHEN
+  - RN-CHEN-CDN
+  - RN-DC02
+  - RN-DC02-CDN
   - DIRECT
   - "☑️ 手动切换"
 - name: "\U0001F3B6 网易音乐"
   type: select
   proxies:
   - "♻️ 自动选择"
-  - RN-CDN
+  - LC
   - LC-CDN
+  - RN
+  - RN-CDN
   - RN-CHEN
+  - RN-CHEN-CDN
+  - RN-DC02
+  - RN-DC02-CDN
   - DIRECT
   - "☑️ 手动切换"
 - name: "\U0001F3AF 全球直连"
   type: select
   proxies:
   - "♻️ 自动选择"
-  - RN-CDN
+  - LC
   - LC-CDN
+  - RN
+  - RN-CDN
   - RN-CHEN
+  - RN-CHEN-CDN
+  - RN-DC02
+  - RN-DC02-CDN
   - DIRECT
   - "☑️ 手动切换"
 - name: "\U0001F6D1 广告拦截"
@@ -232,9 +384,14 @@ proxy-groups:
   type: select
   proxies:
   - "♻️ 自动选择"
-  - RN-CDN
+  - LC
   - LC-CDN
+  - RN
+  - RN-CDN
   - RN-CHEN
+  - RN-CHEN-CDN
+  - RN-DC02
+  - RN-DC02-CDN
   - DIRECT
   - "☑️ 手动切换"
 rules:
