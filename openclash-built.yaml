@@ -7,33 +7,33 @@ log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
 - name: LC
-  server: 154.204.60.75
-  port: 11888
+  server: 38.55.194.42
+  port: 8443
   type: vmess
-  uuid: 62dd849c-0c29-4e46-8b40-c5f9feb3167a
+  uuid: ecf9ee25-a7ce-4fac-94fb-4429f262647a
   alterId: 0
   cipher: auto
   tls: true
-  servername: lc.diaodada.uk
+  servername: amd.diaodada.uk
   network: ws
   ws-opts:
-    path: 62dd849c-0c29-4e46-8b40-c5f9feb3167a-vm
+    path: ecf9ee25-a7ce-4fac-94fb-4429f262647a-vm
     headers:
-      Host: lc.diaodada.uk
+      Host: amd.diaodada.uk
 - name: LC-CDN
   server: rr.cloudflare.182682.xyz
   port: 8443
   type: vmess
-  uuid: 62dd849c-0c29-4e46-8b40-c5f9feb3167a
+  uuid: ecf9ee25-a7ce-4fac-94fb-4429f262647a
   alterId: 0
   cipher: auto
   tls: true
-  servername: lc.diaodada.uk
+  servername: amd.diaodada.uk
   network: ws
   ws-opts:
-    path: 62dd849c-0c29-4e46-8b40-c5f9feb3167a-vm
+    path: ecf9ee25-a7ce-4fac-94fb-4429f262647a-vm
     headers:
-      Host: lc.diaodada.uk
+      Host: amd.diaodada.uk
 - name: RN
   server: 192.3.41.174
   port: 2082
