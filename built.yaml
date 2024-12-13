@@ -9,8 +9,8 @@ proxies:
   - {name: RN-CHEN, server: 107.173.144.102, port: 2083, type: vmess, uuid: 899152a2-a0fd-4259-b48f-2d699a60a6ef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: cah.diaodada.uk, network: ws, ws-opts: {path: 899152a2-a0fd-4259-b48f-2d699a60a6ef-vm, headers: {Host: cah.diaodada.uk}}}
   - {name: RN, server: 192.3.41.174, port: 2082, type: vmess, uuid: 2cc65011-0d1e-4ef6-8e78-71520654e073, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: rn1.diaodada.uk, network: ws, ws-opts: {path: 2cc65011-0d1e-4ef6-8e78-71520654e073-vm, headers: {Host: rn1.diaodada.uk}}}
   - {name: RN-CDN, server: rr.cloudflare.182682.xyz, port: 8443, type: vmess, uuid: 2cc65011-0d1e-4ef6-8e78-71520654e073, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: rn1.diaodada.uk, network: ws, ws-opts: {path: 2cc65011-0d1e-4ef6-8e78-71520654e073-vm, headers: {Host: rn1.diaodada.uk}}}
-  - {name: 香港LC, server: 154.204.60.75, port: 11888, type: vmess, uuid: 62dd849c-0c29-4e46-8b40-c5f9feb3167a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: lc.diaodada.uk, network: ws, ws-opts: {path: 62dd849c-0c29-4e46-8b40-c5f9feb3167a-vm, headers: {Host: lc.diaodada.uk}}}
-  - {name: 香港LC-CDN, server: rr.cloudflare.182682.xyz, port: 8443, type: vmess, uuid: 62dd849c-0c29-4e46-8b40-c5f9feb3167a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: lc.diaodada.uk, network: ws, ws-opts: {path: 62dd849c-0c29-4e46-8b40-c5f9feb3167a-vm, headers: {Host: lc.diaodada.uk}}}
+  - {name: 香港AMD, server: 38.55.194.42, port: 8443, type: vmess, uuid: ecf9ee25-a7ce-4fac-94fb-4429f262647a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: amd.diaodada.uk, network: ws, ws-opts: {path: ecf9ee25-a7ce-4fac-94fb-4429f262647a-vm, headers: {Host: amd.diaodada.uk}}}
+  - {name: 香港AMD-CDN, server: rr.cloudflare.182682.xyz, port: 8443, type: vmess, uuid: ecf9ee25-a7ce-4fac-94fb-4429f262647a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: amd.diaodada.uk, network: ws, ws-opts: {path: ecf9ee25-a7ce-4fac-94fb-4429f262647a-vm, headers: {Host: amd.diaodada.uk}}}
   - {name: DC-02, server: 74.48.116.107, port: 2083, type: vmess, uuid: efc69f0d-7957-4afb-8b9d-95a263bb0dd1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: dc.diaodada.uk, network: ws, ws-opts: {path: efc69f0d-7957-4afb-8b9d-95a263bb0dd1-vm, headers: {Host: dc.diaodada.uk}}}
   - {name: DC-02-CDN, server: rr.cloudflare.182682.xyz, port: 8443, type: vmess, uuid: efc69f0d-7957-4afb-8b9d-95a263bb0dd1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: dc.diaodada.uk, network: ws, ws-opts: {path: efc69f0d-7957-4afb-8b9d-95a263bb0dd1-vm, headers: {Host: dc.diaodada.uk}}}
 proxy-groups:
@@ -22,8 +22,8 @@ proxy-groups:
       - RN-CHEN
       - RN
       - RN-CDN
-      - 香港LC
-      - 香港LC-CDN
+      - 香港AMD
+      - 香港AMD-CDN
       - DC-02
       - DC-02-CDN
       - 🚀 手动切换
@@ -35,8 +35,8 @@ proxy-groups:
       - RN-CHEN
       - RN
       - RN-CDN
-      - 香港LC
-      - 香港LC-CDN
+      - 香港AMD
+      - 香港AMD-CDN
       - DC-02
       - DC-02-CDN
   - name: ♻️ 自动选择
@@ -47,7 +47,7 @@ proxy-groups:
     proxies:
       - RN-CHEN-CDN
       - RN-CDN
-      - 香港LC-CDN
+      - 香港AMD-CDN
       - DC-02-CDN
   - name: 📲 电报消息
     type: select
@@ -58,8 +58,8 @@ proxy-groups:
       - RN-CHEN
       - RN
       - RN-CDN
-      - 香港LC
-      - 香港LC-CDN
+      - 香港AMD
+      - 香港AMD-CDN
       - DC-02
       - DC-02-CDN
       - 🚀 手动切换
@@ -73,8 +73,8 @@ proxy-groups:
       - RN-CHEN
       - RN
       - RN-CDN
-      - 香港LC
-      - 香港LC-CDN
+      - 香港AMD
+      - 香港AMD-CDN
       - DC-02
       - DC-02-CDN
       - 🚀 手动切换
@@ -88,8 +88,8 @@ proxy-groups:
       - RN-CHEN
       - RN
       - RN-CDN
-      - 香港LC
-      - 香港LC-CDN
+      - 香港AMD
+      - 香港AMD-CDN
       - DC-02
       - DC-02-CDN
       - 🚀 手动切换
@@ -103,8 +103,8 @@ proxy-groups:
       - RN-CHEN
       - RN
       - RN-CDN
-      - 香港LC
-      - 香港LC-CDN
+      - 香港AMD
+      - 香港AMD-CDN
       - DC-02
       - DC-02-CDN
       - 🚀 手动切换
@@ -117,8 +117,8 @@ proxy-groups:
       - RN-CHEN
       - RN
       - RN-CDN
-      - 香港LC
-      - 香港LC-CDN
+      - 香港AMD
+      - 香港AMD-CDN
       - DC-02
       - DC-02-CDN
       - 🚀 手动切换
@@ -131,8 +131,8 @@ proxy-groups:
       - RN-CHEN
       - RN
       - RN-CDN
-      - 香港LC
-      - 香港LC-CDN
+      - 香港AMD
+      - 香港AMD-CDN
       - DC-02
       - DC-02-CDN
   - name: 🌍 国外媒体
@@ -144,8 +144,8 @@ proxy-groups:
       - RN-CHEN
       - RN
       - RN-CDN
-      - 香港LC
-      - 香港LC-CDN
+      - 香港AMD
+      - 香港AMD-CDN
       - DC-02
       - DC-02-CDN
       - 🚀 手动切换
@@ -158,8 +158,8 @@ proxy-groups:
       - RN-CHEN
       - RN
       - RN-CDN
-      - 香港LC
-      - 香港LC-CDN
+      - 香港AMD
+      - 香港AMD-CDN
       - DC-02
       - DC-02-CDN
       - 🚀 手动切换
@@ -172,8 +172,8 @@ proxy-groups:
       - RN-CHEN
       - RN
       - RN-CDN
-      - 香港LC
-      - 香港LC-CDN
+      - 香港AMD
+      - 香港AMD-CDN
       - DC-02
       - DC-02-CDN
       - 🚀 手动切换
@@ -185,8 +185,8 @@ proxy-groups:
       - RN-CHEN
       - RN
       - RN-CDN
-      - 香港LC
-      - 香港LC-CDN
+      - 香港AMD
+      - 香港AMD-CDN
       - DC-02
       - DC-02-CDN
       - 🚀 手动切换
@@ -199,8 +199,8 @@ proxy-groups:
       - RN-CHEN
       - RN
       - RN-CDN
-      - 香港LC
-      - 香港LC-CDN
+      - 香港AMD
+      - 香港AMD-CDN
       - DC-02
       - DC-02-CDN
       - 🚀 手动切换
@@ -213,8 +213,8 @@ proxy-groups:
       - RN-CHEN
       - RN
       - RN-CDN
-      - 香港LC
-      - 香港LC-CDN
+      - 香港AMD
+      - 香港AMD-CDN
       - DC-02
       - DC-02-CDN
       - 🚀 手动切换
@@ -227,8 +227,8 @@ proxy-groups:
       - RN-CHEN
       - RN
       - RN-CDN
-      - 香港LC
-      - 香港LC-CDN
+      - 香港AMD
+      - 香港AMD-CDN
       - DC-02
       - DC-02-CDN
       - 🚀 手动切换
@@ -241,8 +241,8 @@ proxy-groups:
       - RN-CHEN
       - RN
       - RN-CDN
-      - 香港LC
-      - 香港LC-CDN
+      - 香港AMD
+      - 香港AMD-CDN
       - DC-02
       - DC-02-CDN
       - 🚀 手动切换
@@ -255,8 +255,8 @@ proxy-groups:
       - RN-CHEN
       - RN
       - RN-CDN
-      - 香港LC
-      - 香港LC-CDN
+      - 香港AMD
+      - 香港AMD-CDN
       - DC-02
       - DC-02-CDN
       - ♻️ 自动选择
@@ -286,8 +286,8 @@ proxy-groups:
       - RN-CHEN
       - RN
       - RN-CDN
-      - 香港LC
-      - 香港LC-CDN
+      - 香港AMD
+      - 香港AMD-CDN
       - DC-02
       - DC-02-CDN
       - 🚀 手动切换
