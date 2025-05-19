@@ -94,7 +94,6 @@ proxy-groups:
   - name: 📺 巴哈姆特
     type: select
     proxies:
-      - 🇨🇳 台湾节点
       - 🚀 节点选择
       - chen-Oracle
       - RN-4T
