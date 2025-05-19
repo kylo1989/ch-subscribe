@@ -21,6 +21,8 @@ proxies:
   - {name: RN-4T-CDN 2, server: ct.090227.xyz, port: 8443, client-fingerprint: chrome, type: vmess, uuid: 1aed8f1b-da46-4398-ad21-3f5517b76319, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: rn1.diaodada.uk, network: ws, ws-opts: {path: 1aed8f1b-da46-4398-ad21-3f5517b76319-vm, headers: {Host: rn1.diaodada.uk}}}
   - {name: DC-02, server: 74.48.116.107, port: 2096, client-fingerprint: chrome, type: vmess, uuid: bbcdc65c-bdab-42e8-bec8-438064f5de1a, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: dc.diaodada.uk, network: ws, ws-opts: {path: bbcdc65c-bdab-42e8-bec8-438064f5de1a-vm, headers: {Host: dc.diaodada.uk}}}
   - {name: DC-02-CDN, server: ct.090227.xyz, port: 8443, client-fingerprint: chrome, type: vmess, uuid: bbcdc65c-bdab-42e8-bec8-438064f5de1a, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, servername: dc.diaodada.uk, network: ws, ws-opts: {path: bbcdc65c-bdab-42e8-bec8-438064f5de1a-vm, headers: {Host: dc.diaodada.uk}}}
+  - {name: 野草云, server: 38.55.194.42, port: 11889, type: vmess, uuid: f31a649d-3e27-4c16-817f-a9f9058117b1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: amd.diaodada.uk, network: ws, ws-opts: {path: /gprh, headers: {Host: amd.diaodada.uk}}}
+  - {name: 野草云-CDN, server: rr.cloudflare.182682.xyz, port: 8443, type: vmess, uuid: f31a649d-3e27-4c16-817f-a9f9058117b1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: amd.diaodada.uk, network: ws, ws-opts: {path: /gprh, headers: {Host: amd.diaodada.uk}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -31,6 +33,8 @@ proxy-groups:
       - RN-4T-CDN 2
       - DC-02
       - DC-02-CDN
+      - 野草云
+      - 野草云-CDN
       - 🚀 手动切换
       - DIRECT
   - name: 🚀 手动切换
@@ -42,6 +46,8 @@ proxy-groups:
       - RN-4T-CDN 2
       - DC-02
       - DC-02-CDN
+      - 野草云
+      - 野草云-CDN
   - name: 📲 电报消息
     type: select
     proxies:
@@ -52,6 +58,8 @@ proxy-groups:
       - RN-4T-CDN 2
       - DC-02
       - DC-02-CDN
+      - 野草云
+      - 野草云-CDN
       - 🚀 手动切换
       - DIRECT
   - name: 💬 Ai平台
@@ -64,6 +72,8 @@ proxy-groups:
       - RN-4T-CDN 2
       - DC-02
       - DC-02-CDN
+      - 野草云
+      - 野草云-CDN
       - 🚀 手动切换
       - DIRECT
   - name: 📹 油管视频
@@ -76,6 +86,8 @@ proxy-groups:
       - RN-4T-CDN 2
       - DC-02
       - DC-02-CDN
+      - 野草云
+      - 野草云-CDN
       - 🚀 手动切换
       - DIRECT
   - name: 🎥 奈飞视频
@@ -88,6 +100,8 @@ proxy-groups:
       - RN-4T-CDN 2
       - DC-02
       - DC-02-CDN
+      - 野草云
+      - 野草云-CDN
       - 🚀 手动切换
       - DIRECT
   - name: 📺 巴哈姆特
@@ -100,6 +114,8 @@ proxy-groups:
       - RN-4T-CDN 2
       - DC-02
       - DC-02-CDN
+      - 野草云
+      - 野草云-CDN
       - 🚀 手动切换
       - DIRECT
   - name: 📺 哔哩哔哩
@@ -112,6 +128,8 @@ proxy-groups:
       - RN-4T-CDN 2
       - DC-02
       - DC-02-CDN
+      - 野草云
+      - 野草云-CDN
       - DIRECT
   - name: 🌍 国外媒体
     type: select
@@ -123,6 +141,8 @@ proxy-groups:
       - RN-4T-CDN 2
       - DC-02
       - DC-02-CDN
+      - 野草云
+      - 野草云-CDN
       - 🚀 手动切换
       - DIRECT
   - name: 🌏 国内媒体
@@ -135,6 +155,8 @@ proxy-groups:
       - RN-4T-CDN 2
       - DC-02
       - DC-02-CDN
+      - 野草云
+      - 野草云-CDN
       - 🚀 手动切换
   - name: 📢 谷歌FCM
     type: select
@@ -147,6 +169,8 @@ proxy-groups:
       - RN-4T-CDN 2
       - DC-02
       - DC-02-CDN
+      - 野草云
+      - 野草云-CDN
       - 🚀 手动切换
   - name: Ⓜ️ 微软Bing
     type: select
@@ -159,6 +183,8 @@ proxy-groups:
       - RN-4T-CDN 2
       - DC-02
       - DC-02-CDN
+      - 野草云
+      - 野草云-CDN
       - 🚀 手动切换
   - name: Ⓜ️ 微软云盘
     type: select
@@ -171,6 +197,8 @@ proxy-groups:
       - RN-4T-CDN 2
       - DC-02
       - DC-02-CDN
+      - 野草云
+      - 野草云-CDN
       - 🚀 手动切换
   - name: Ⓜ️ 微软服务
     type: select
@@ -183,6 +211,8 @@ proxy-groups:
       - RN-4T-CDN 2
       - DC-02
       - DC-02-CDN
+      - 野草云
+      - 野草云-CDN
       - 🚀 手动切换
   - name: 🍎 苹果服务
     type: select
@@ -195,6 +225,8 @@ proxy-groups:
       - RN-4T-CDN 2
       - DC-02
       - DC-02-CDN
+      - 野草云
+      - 野草云-CDN
       - 🚀 手动切换
   - name: 🎮 游戏平台
     type: select
@@ -207,6 +239,8 @@ proxy-groups:
       - RN-4T-CDN 2
       - DC-02
       - DC-02-CDN
+      - 野草云
+      - 野草云-CDN
       - 🚀 手动切换
   - name: 🎶 网易音乐
     type: select
@@ -239,6 +273,8 @@ proxy-groups:
       - RN-4T-CDN 2
       - DC-02
       - DC-02-CDN
+      - 野草云
+      - 野草云-CDN
       - 🚀 手动切换
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
