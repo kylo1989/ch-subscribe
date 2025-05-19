@@ -81,7 +81,6 @@ proxy-groups:
   - name: 🎥 奈飞视频
     type: select
     proxies:
-      - 🎥 奈飞节点
       - 🚀 节点选择
       - chen-Oracle
       - RN-4T
