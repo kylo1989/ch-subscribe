@@ -69,11 +69,13 @@ proxy-groups:
     type: select
     proxies:
       - REJECT
+      - waimao-CDN
       - DIRECT
   - name: 🍃 应用净化
     type: select
     proxies:
       - REJECT
+      - waimao-CDN
       - DIRECT
   - name: 🐟 漏网之鱼
     type: select
