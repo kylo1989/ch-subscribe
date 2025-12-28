@@ -47,8 +47,8 @@ proxy-groups:
   - name: 🍎 苹果服务
     type: select
     proxies:
-      - 🚀 节点选择
       - 🎯 全球直连
+      - 🚀 节点选择
       - waimao
       - waimao-CDN
   - name: 📢 谷歌FCM
@@ -69,13 +69,11 @@ proxy-groups:
     type: select
     proxies:
       - REJECT
-      - waimao-CDN
       - DIRECT
   - name: 🍃 应用净化
     type: select
     proxies:
       - REJECT
-      - waimao-CDN
       - DIRECT
   - name: 🐟 漏网之鱼
     type: select
@@ -1142,19 +1140,14 @@ rules:
   - DOMAIN-SUFFIX,tongji.home.soufun.com,🍃 应用净化
   - DOMAIN-SUFFIX,admob.com,🍃 应用净化
   - DOMAIN-SUFFIX,ads.gmodules.com,🍃 应用净化
-  - DOMAIN-SUFFIX,ads.google.com,🍃 应用净化
-  - DOMAIN-SUFFIX,adservice.google.com,🍃 应用净化
   - DOMAIN-SUFFIX,afd.l.google.com,🍃 应用净化
   - DOMAIN-SUFFIX,badad.googleplex.com,🍃 应用净化
   - DOMAIN-SUFFIX,csi.gstatic.com,🍃 应用净化
   - DOMAIN-SUFFIX,doubleclick.com,🍃 应用净化
   - DOMAIN-SUFFIX,doubleclick.net,🍃 应用净化
   - DOMAIN-SUFFIX,google-analytics.com,🍃 应用净化
-  - DOMAIN-SUFFIX,googleadservices.com,🍃 应用净化
-  - DOMAIN-SUFFIX,googleadsserving.cn,🍃 应用净化
   - DOMAIN-SUFFIX,googlecommerce.com,🍃 应用净化
   - DOMAIN-SUFFIX,googlesyndication.com,🍃 应用净化
-  - DOMAIN-SUFFIX,mobileads.google.com,🍃 应用净化
   - DOMAIN-SUFFIX,pagead-tpc.l.google.com,🍃 应用净化
   - DOMAIN-SUFFIX,pagead.google.com,🍃 应用净化
   - DOMAIN-SUFFIX,pagead.l.google.com,🍃 应用净化
@@ -2331,6 +2324,11 @@ rules:
   - DOMAIN-SUFFIX,yt.be,🌍 国外媒体
   - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
   - DOMAIN,music.youtube.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,ads.google.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,mobileads.google.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,adservice.google.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,googleadservices.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,googleadsserving.cn,🌍 国外媒体
   - DOMAIN-SUFFIX,1password.com,🚀 节点选择
   - DOMAIN-SUFFIX,adguard.org,🚀 节点选择
   - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
