@@ -83,8 +83,8 @@ proxy-groups:
   - name: 🍎 苹果服务
     type: select
     proxies:
-      - 🚀 节点选择
       - 🎯 全球直连
+      - 🚀 节点选择
       - DC02-CDN
       - DC02-CDN2
       - RN-4T-CDN
