@@ -10,6 +10,8 @@ proxies:
   - {name: RN-4T-CDN2, server: rr.cf.090227.xyz, port: 8443, type: vmess, uuid: 7b6327c1-09a3-4c44-bc53-20c990a89888, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: rn1.diaodada.uk, network: ws, ws-opts: {path: 7b6327c1-09a3-4c44-bc53-20c990a89888-vm, headers: {Host: rn1.diaodada.uk}}}
   - {name: chen-Oracle-CDN, server: rr.cloudflare.182682.xyz, port: 8443, type: vmess, uuid: 6147e105-56ac-43b9-8d50-9d6cfe3de2b5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: fanqie.diaodada.uk, network: ws, ws-opts: {path: 6147e105-56ac-43b9-8d50-9d6cfe3de2b5-vm, headers: {Host: fanqie.diaodada.uk}}}
   - {name: chen-Oracle-CDN2, server: rr.cf.090227.xyz, port: 8443, type: vmess, uuid: 6147e105-56ac-43b9-8d50-9d6cfe3de2b5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: fanqie.diaodada.uk, network: ws, ws-opts: {path: 6147e105-56ac-43b9-8d50-9d6cfe3de2b5-vm, headers: {Host: fanqie.diaodada.uk}}}
+  - {name: waimao, server: 142.171.7.155, port: 2053, type: vmess, uuid: 3ec7e85b-6efe-46bd-b796-ccbd2c7f5c8a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: waimao.diaodada.uk, network: ws, ws-opts: {path: 3ec7e85b-6efe-46bd-b796-ccbd2c7f5c8a-vm, headers: {Host: waimao.diaodada.uk}}}
+  - {name: waimao-CDN, server: rr.cloudflare.182682.xyz, port: 8443, type: vmess, uuid: 3ec7e85b-6efe-46bd-b796-ccbd2c7f5c8a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: waimao.diaodada.uk, network: ws, ws-opts: {path: 3ec7e85b-6efe-46bd-b796-ccbd2c7f5c8a-vm, headers: {Host: waimao.diaodada.uk}}}  
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -22,6 +24,8 @@ proxy-groups:
       - RN-4T-CDN2
       - chen-Oracle-CDN
       - chen-Oracle-CDN2
+      - waimao
+      - waimao-CDN
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -34,6 +38,8 @@ proxy-groups:
       - RN-4T-CDN2
       - chen-Oracle-CDN
       - chen-Oracle-CDN2
+      - waimao
+      - waimao-CDN
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -46,6 +52,8 @@ proxy-groups:
       - RN-4T-CDN2
       - chen-Oracle-CDN
       - chen-Oracle-CDN2
+      - waimao
+      - waimao-CDN
   - name: 📲 电报信息
     type: select
     proxies:
@@ -57,6 +65,8 @@ proxy-groups:
       - RN-4T-CDN2
       - chen-Oracle-CDN
       - chen-Oracle-CDN2
+      - waimao
+      - waimao-CDN
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -68,6 +78,8 @@ proxy-groups:
       - RN-4T-CDN2
       - chen-Oracle-CDN
       - chen-Oracle-CDN2
+      - waimao
+      - waimao-CDN
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -79,6 +91,8 @@ proxy-groups:
       - RN-4T-CDN2
       - chen-Oracle-CDN
       - chen-Oracle-CDN2
+      - waimao
+      - waimao-CDN
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -107,6 +121,8 @@ proxy-groups:
       - RN-4T-CDN2
       - chen-Oracle-CDN
       - chen-Oracle-CDN2
+      - waimao
+      - waimao-CDN
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
