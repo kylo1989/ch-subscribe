@@ -27,8 +27,8 @@ proxies:
     flow: xtls-rprx-vision
     servername: www.yahoo.com                        # 自定义回落域名
     reality-opts: 
-    public-key: 5vRzPLYAKfzwPONmywvGw3uSMfAYykYmkxPnVro27HE    # Reality public-key
-    short-id: 3de13665                       # Reality short-id
+      public-key: 5vRzPLYAKfzwPONmywvGw3uSMfAYykYmkxPnVro27HE    # Reality public-key
+      short-id: 3de13665                       # Reality short-id
     client-fingerprint: chrome                  # 自定义浏览器指纹
 
   - {name: 直连, type: direct}
