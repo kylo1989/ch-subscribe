@@ -2,7 +2,19 @@ mixed-port: 7890
 allow-lan: true
 mode: Rule
 log-level: info
+ipv6: false
 external-controller: :9090
+
+# DNS 配置确保解析正常
+dns:
+  enable: true
+  listen: :1053
+  ipv6: false
+  enhanced-mode: redir-host
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+
 proxies:
   - {name: DC02-CDN, server: rr.cf.090227.xyz, port: 8443, type: vmess, uuid: 4af8b054-5e30-474e-bf7c-97fc9b849996, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: dc.diaodada.uk, network: ws, ws-opts: {path: 4af8b054-5e30-474e-bf7c-97fc9b849996-vm, headers: {Host: dc.diaodada.uk}}}
   - {name: DC02-CDN2, server: rr.cloudflare.182682.xyz, port: 8443, type: vmess, uuid: 4af8b054-5e30-474e-bf7c-97fc9b849996, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: dc.diaodada.uk, network: ws, ws-opts: {path: 4af8b054-5e30-474e-bf7c-97fc9b849996-vm, headers: {Host: dc.diaodada.uk}}}
@@ -12,7 +24,9 @@ proxies:
   - {name: chen-Oracle-CDN2, server: rr.cf.090227.xyz, port: 8443, type: vmess, uuid: 6147e105-56ac-43b9-8d50-9d6cfe3de2b5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: fanqie.diaodada.uk, network: ws, ws-opts: {path: 6147e105-56ac-43b9-8d50-9d6cfe3de2b5-vm, headers: {Host: fanqie.diaodada.uk}}}
   - {name: waimao, server: 142.171.7.155, port: 2053, type: vmess, uuid: 3ec7e85b-6efe-46bd-b796-ccbd2c7f5c8a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: waimao.diaodada.uk, network: ws, ws-opts: {path: 3ec7e85b-6efe-46bd-b796-ccbd2c7f5c8a-vm, headers: {Host: waimao.diaodada.uk}}}
   - {name: waimao-CDN, server: rr.cloudflare.182682.xyz, port: 8443, type: vmess, uuid: 3ec7e85b-6efe-46bd-b796-ccbd2c7f5c8a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: waimao.diaodada.uk, network: ws, ws-opts: {path: 3ec7e85b-6efe-46bd-b796-ccbd2c7f5c8a-vm, headers: {Host: waimao.diaodada.uk}}}  
-  - {name: vl-reality-DC02,type: vless,server: 74.48.116.107,port: 28346,uuid: 4af8b054-5e30-474e-bf7c-97fc9b849996,network: tcp,udp: true,tls: false,flow: xtls-rprx-vision,servername: www.yahoo.com,public-key: 5vRzPLYAKfzwPONmywvGw3uSMfAYykYmkxPnVro27HE,short-id: 3de13665,client-fingerprint: chrome}
+  - {name: vl-reality-DC02, type: vless, server: 74.48.116.107, port: 28346, uuid: 4af8b054-5e30-474e-bf7c-97fc9b849996, network: tcp, udp: true, tls: false, flow: xtls-rprx-vision, servername: www.yahoo.com, reality-opts: {public-key: 5vRzPLYAKfzwPONmywvGw3uSMfAYykYmkxPnVro27HE, short-id: 3de13665}, client-fingerprint: chrome}
+
+proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
@@ -27,6 +41,7 @@ proxies:
       - waimao
       - waimao-CDN
       - vl-reality-DC02
+
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -42,94 +57,57 @@ proxies:
       - waimao
       - waimao-CDN
       - vl-reality-DC02
+
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
-      - 🎯 全球直连
       - DC02-CDN
-      - DC02-CDN2
-      - RN-4T-CDN
-      - RN-4T-CDN2
-      - chen-Oracle-CDN
-      - chen-Oracle-CDN2
-      - waimao
-      - waimao-CDN
       - vl-reality-DC02
+
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
-      - 🎯 全球直连
-      - DC02-CDN
-      - DC02-CDN2
-      - RN-4T-CDN
-      - RN-4T-CDN2
-      - chen-Oracle-CDN
-      - chen-Oracle-CDN2
-      - waimao
-      - waimao-CDN
-      - vl-reality-DC02
+      - DIRECT
+
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
-      - 🎯 全球直连
+      - DIRECT
       - 🚀 节点选择
-      - DC02-CDN
-      - DC02-CDN2
-      - RN-4T-CDN
-      - RN-4T-CDN2
-      - chen-Oracle-CDN
-      - chen-Oracle-CDN2
-      - waimao
-      - waimao-CDN
-      - vl-reality-DC02
+
   - name: 🍎 苹果服务
     type: select
     proxies:
-      - 🎯 全球直连
+      - DIRECT
       - 🚀 节点选择
-      - DC02-CDN
-      - DC02-CDN2
-      - RN-4T-CDN
-      - RN-4T-CDN2
-      - chen-Oracle-CDN
-      - chen-Oracle-CDN2
-      - waimao
-      - waimao-CDN
-      - vl-reality-DC02
+
   - name: 🎯 全球直连
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
-      - ♻️ 自动选择
+
   - name: 🛑 全球拦截
     type: select
     proxies:
       - REJECT
       - DIRECT
+
   - name: 🍃 应用净化
     type: select
     proxies:
       - REJECT
       - DIRECT
+
   - name: 🐟 漏网之鱼
     type: select
     proxies:
       - 🚀 节点选择
-      - 🎯 全球直连
-      - ♻️ 自动选择
-      - DC02-CDN
-      - DC02-CDN2
-      - RN-4T-CDN
-      - RN-4T-CDN2
-      - chen-Oracle-CDN
-      - chen-Oracle-CDN2
-      - waimao
-      - waimao-CDN
-      - vl-reality-DC02
+      - DIRECT
+      
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
