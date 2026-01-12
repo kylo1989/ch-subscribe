@@ -24,7 +24,22 @@ proxies:
   - {name: chen-Oracle-CDN2, server: rr.cf.090227.xyz, port: 8443, type: vmess, uuid: 6147e105-56ac-43b9-8d50-9d6cfe3de2b5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: fanqie.diaodada.uk, network: ws, ws-opts: {path: 6147e105-56ac-43b9-8d50-9d6cfe3de2b5-vm, headers: {Host: fanqie.diaodada.uk}}}
   - {name: waimao, server: 142.171.7.155, port: 2053, type: vmess, uuid: 3ec7e85b-6efe-46bd-b796-ccbd2c7f5c8a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: waimao.diaodada.uk, network: ws, ws-opts: {path: 3ec7e85b-6efe-46bd-b796-ccbd2c7f5c8a-vm, headers: {Host: waimao.diaodada.uk}}}
   - {name: waimao-CDN, server: rr.cloudflare.182682.xyz, port: 8443, type: vmess, uuid: 3ec7e85b-6efe-46bd-b796-ccbd2c7f5c8a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: waimao.diaodada.uk, network: ws, ws-opts: {path: 3ec7e85b-6efe-46bd-b796-ccbd2c7f5c8a-vm, headers: {Host: waimao.diaodada.uk}}}  
-  - {name: vl-reality-DC02, type: vless, server: 74.48.116.107, port: 28346, uuid: 4af8b054-5e30-474e-bf7c-97fc9b849996, network: tcp, udp: true, tls: false, flow: xtls-rprx-vision, servername: www.yahoo.com, reality-opts: {public-key: 5vRzPLYAKfzwPONmywvGw3uSMfAYykYmkxPnVro27HE, short-id: 3de13665}, client-fingerprint: chrome}
+  
+  - name: vl-reality-DC02                  # 可以自定义节点名称
+    type: vless
+    server: 74.48.116.107                             # 解析的域名或IP
+    port: 28346                                 # 自定义端口
+    uuid: 4af8b054-5e30-474e-bf7c-97fc9b849996   # 自定义 UUID
+    network: tcp
+    udp: true
+    tls: false
+    flow: xtls-rprx-vision
+    servername: www.yahoo.com                        # 自定义回落域名
+    reality-opts: 
+      public-key: 5vRzPLYAKfzwPONmywvGw3uSMfAYykYmkxPnVro27HE    # Reality public-key
+      short-id: 3de13665                       # Reality short-id
+    client-fingerprint: chrome                  # 自定义浏览器指纹
+
 
 proxy-groups:
   - name: 🚀 节点选择
