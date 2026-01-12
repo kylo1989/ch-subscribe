@@ -16,8 +16,6 @@ dns:
     - 119.29.29.29
 
 proxies:
-  - {name: DC02-CDN, server: rr.cf.090227.xyz, port: 8443, type: vmess, uuid: 4af8b054-5e30-474e-bf7c-97fc9b849996, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: dc.diaodada.uk, network: ws, ws-opts: {path: 4af8b054-5e30-474e-bf7c-97fc9b849996-vm, headers: {Host: dc.diaodada.uk}}}
-  - {name: DC02-CDN2, server: rr.cloudflare.182682.xyz, port: 8443, type: vmess, uuid: 4af8b054-5e30-474e-bf7c-97fc9b849996, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: dc.diaodada.uk, network: ws, ws-opts: {path: 4af8b054-5e30-474e-bf7c-97fc9b849996-vm, headers: {Host: dc.diaodada.uk}}}
   - {name: RN-4T-CDN, server: rr.cloudflare.182682.xyz, port: 8443, type: vmess, uuid: 7b6327c1-09a3-4c44-bc53-20c990a89888, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: rn1.diaodada.uk, network: ws, ws-opts: {path: 7b6327c1-09a3-4c44-bc53-20c990a89888-vm, headers: {Host: rn1.diaodada.uk}}}
   - {name: RN-4T-CDN2, server: rr.cf.090227.xyz, port: 8443, type: vmess, uuid: 7b6327c1-09a3-4c44-bc53-20c990a89888, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: rn1.diaodada.uk, network: ws, ws-opts: {path: 7b6327c1-09a3-4c44-bc53-20c990a89888-vm, headers: {Host: rn1.diaodada.uk}}}
   - {name: chen-Oracle-CDN, server: rr.cloudflare.182682.xyz, port: 8443, type: vmess, uuid: 6147e105-56ac-43b9-8d50-9d6cfe3de2b5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: fanqie.diaodada.uk, network: ws, ws-opts: {path: 6147e105-56ac-43b9-8d50-9d6cfe3de2b5-vm, headers: {Host: fanqie.diaodada.uk}}}
@@ -26,16 +24,12 @@ proxies:
   - {name: waimao-CDN, server: rr.cloudflare.182682.xyz, port: 8443, type: vmess, uuid: 3ec7e85b-6efe-46bd-b796-ccbd2c7f5c8a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: waimao.diaodada.uk, network: ws, ws-opts: {path: 3ec7e85b-6efe-46bd-b796-ccbd2c7f5c8a-vm, headers: {Host: waimao.diaodada.uk}}}  
   - {name: vl-reality-DC02, server: 74.48.116.107, port: 28346, type: vless, uuid: 4af8b054-5e30-474e-bf7c-97fc9b849996, udp: true, flow: xtls-rprx-vision, packet-encoding: xudp, tls: true, skip-cert-verify: true, servername: www.yahoo.com, client-fingerprint: chrome, encryption: "", network: tcp, reality-opts: {public-key: 5vRzPLYAKfzwPONmywvGw3uSMfAYykYmkxPnVro27HE, short-id: 3de13665}}
 
-
-
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - DC02-CDN
-      - DC02-CDN2
       - RN-4T-CDN
       - RN-4T-CDN2
       - chen-Oracle-CDN
@@ -50,8 +44,6 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - DC02-CDN
-      - DC02-CDN2
       - RN-4T-CDN
       - RN-4T-CDN2
       - chen-Oracle-CDN
@@ -65,13 +57,26 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
-      - DC02-CDN
+      - RN-4T-CDN
+      - RN-4T-CDN2
+      - chen-Oracle-CDN
+      - chen-Oracle-CDN2
+      - waimao
+      - waimao-CDN
+      - vl-reality-DC02
       - vl-reality-DC02
 
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
+      - RN-4T-CDN
+      - RN-4T-CDN2
+      - chen-Oracle-CDN
+      - chen-Oracle-CDN2
+      - waimao
+      - waimao-CDN
+      - vl-reality-DC02
       - DIRECT
 
   - name: Ⓜ️ 微软服务
@@ -79,18 +84,39 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🚀 节点选择
+      - RN-4T-CDN
+      - RN-4T-CDN2
+      - chen-Oracle-CDN
+      - chen-Oracle-CDN2
+      - waimao
+      - waimao-CDN
+      - vl-reality-DC02
 
   - name: 🍎 苹果服务
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
+      - RN-4T-CDN
+      - RN-4T-CDN2
+      - chen-Oracle-CDN
+      - chen-Oracle-CDN2
+      - waimao
+      - waimao-CDN
+      - vl-reality-DC02
 
   - name: 🎯 全球直连
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
+      - RN-4T-CDN
+      - RN-4T-CDN2
+      - chen-Oracle-CDN
+      - chen-Oracle-CDN2
+      - waimao
+      - waimao-CDN
+      - vl-reality-DC02
 
   - name: 🛑 全球拦截
     type: select
@@ -108,6 +134,13 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
+      - RN-4T-CDN
+      - RN-4T-CDN2
+      - chen-Oracle-CDN
+      - chen-Oracle-CDN2
+      - waimao
+      - waimao-CDN
+      - vl-reality-DC02
       - DIRECT
       
 rules:
@@ -1927,6 +1960,7 @@ rules:
   - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
   - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
   - DOMAIN-SUFFIX,edgedatg.com,🌍 国外媒体
+  - DOMAIN-SUFFIX,minepi.com,🌍 国外媒体  
   - DOMAIN-SUFFIX,go.com,🌍 国外媒体
   - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
   - DOMAIN,api-abematv.bucketeer.jp,🌍 国外媒体
