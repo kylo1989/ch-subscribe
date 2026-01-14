@@ -16,6 +16,7 @@ dns:
     - 119.29.29.29
 
 proxies:
+  - {name: vl-reality-HK, server: 149.104.29.26, port: 57204, type: vless, uuid: 647ae682-60df-416c-ac50-60cf34541b4c, flow: xtls-rprx-vision, tls: true, servername: www.yahoo.com, client-fingerprint: chrome, network: tcp, reality-opts: {public-key: PA3pyNmMYA0j455sswd2W8hx76ntvO4sCHG13qxODEU, short-id: e84e5d35}}
   - {name: RN-4T-CDN, server: rr.cloudflare.182682.xyz, port: 8443, type: vmess, uuid: 7b6327c1-09a3-4c44-bc53-20c990a89888, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: rn1.diaodada.uk, network: ws, ws-opts: {path: 7b6327c1-09a3-4c44-bc53-20c990a89888-vm, headers: {Host: rn1.diaodada.uk}}}
   - {name: RN-4T-CDN2, server: rr.cf.090227.xyz, port: 8443, type: vmess, uuid: 7b6327c1-09a3-4c44-bc53-20c990a89888, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: rn1.diaodada.uk, network: ws, ws-opts: {path: 7b6327c1-09a3-4c44-bc53-20c990a89888-vm, headers: {Host: rn1.diaodada.uk}}}
   - {name: chen-Oracle-CDN, server: rr.cloudflare.182682.xyz, port: 8443, type: vmess, uuid: 6147e105-56ac-43b9-8d50-9d6cfe3de2b5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: fanqie.diaodada.uk, network: ws, ws-opts: {path: 6147e105-56ac-43b9-8d50-9d6cfe3de2b5-vm, headers: {Host: fanqie.diaodada.uk}}}
@@ -37,6 +38,7 @@ proxy-groups:
       - waimao
       - waimao-CDN
       - vl-reality-DC02
+      - vl-reality-HK
 
   - name: ♻️ 自动选择
     type: url-test
@@ -51,6 +53,7 @@ proxy-groups:
       - waimao
       - waimao-CDN
       - vl-reality-DC02
+      - vl-reality-HK
 
   - name: 🌍 国外媒体
     type: select
@@ -64,6 +67,7 @@ proxy-groups:
       - waimao
       - waimao-CDN
       - vl-reality-DC02
+      - vl-reality-HK
 
   - name: 📲 电报信息
     type: select
@@ -76,6 +80,7 @@ proxy-groups:
       - waimao
       - waimao-CDN
       - vl-reality-DC02
+      - vl-reality-HK
       - DIRECT
 
   - name: Ⓜ️ 微软服务
@@ -90,6 +95,7 @@ proxy-groups:
       - waimao
       - waimao-CDN
       - vl-reality-DC02
+      - vl-reality-HK
 
   - name: 🍎 苹果服务
     type: select
@@ -103,6 +109,7 @@ proxy-groups:
       - waimao
       - waimao-CDN
       - vl-reality-DC02
+      - vl-reality-HK
 
   - name: 🎯 全球直连
     type: select
@@ -116,6 +123,7 @@ proxy-groups:
       - waimao
       - waimao-CDN
       - vl-reality-DC02
+      - vl-reality-HK
 
   - name: 🛑 全球拦截
     type: select
@@ -140,6 +148,7 @@ proxy-groups:
       - waimao
       - waimao-CDN
       - vl-reality-DC02
+      - vl-reality-HK
       - DIRECT
       
 rules:
