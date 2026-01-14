@@ -20,10 +20,11 @@ proxies:
   - {name: RN-4T-CDN2, server: rr.cf.090227.xyz, port: 8443, type: vmess, uuid: 7b6327c1-09a3-4c44-bc53-20c990a89888, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: rn1.diaodada.uk, network: ws, ws-opts: {path: 7b6327c1-09a3-4c44-bc53-20c990a89888-vm, headers: {Host: rn1.diaodada.uk}}}
   - {name: chen-Oracle-CDN, server: rr.cloudflare.182682.xyz, port: 8443, type: vmess, uuid: 6147e105-56ac-43b9-8d50-9d6cfe3de2b5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: fanqie.diaodada.uk, network: ws, ws-opts: {path: 6147e105-56ac-43b9-8d50-9d6cfe3de2b5-vm, headers: {Host: fanqie.diaodada.uk}}}
   - {name: chen-Oracle-CDN2, server: rr.cf.090227.xyz, port: 8443, type: vmess, uuid: 6147e105-56ac-43b9-8d50-9d6cfe3de2b5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: fanqie.diaodada.uk, network: ws, ws-opts: {path: 6147e105-56ac-43b9-8d50-9d6cfe3de2b5-vm, headers: {Host: fanqie.diaodada.uk}}}
-  - {name: waimao, server: 142.171.7.155, port: 2053, type: vmess, uuid: 3ec7e85b-6efe-46bd-b796-ccbd2c7f5c8a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: waimao.diaodada.uk, network: ws, ws-opts: {path: 3ec7e85b-6efe-46bd-b796-ccbd2c7f5c8a-vm, headers: {Host: waimao.diaodada.uk}}}
-  - {name: waimao-CDN, server: rr.cloudflare.182682.xyz, port: 8443, type: vmess, uuid: 3ec7e85b-6efe-46bd-b796-ccbd2c7f5c8a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: waimao.diaodada.uk, network: ws, ws-opts: {path: 3ec7e85b-6efe-46bd-b796-ccbd2c7f5c8a-vm, headers: {Host: waimao.diaodada.uk}}}  
+  - {name: waimao, server: 142.171.7.155, port: 2053, type: vmess, uuid: e30e5299-bda8-4a6a-8c20-0a9d21d1e840, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: waimao.diaodada.uk, network: ws, ws-opts: {path: e30e5299-bda8-4a6a-8c20-0a9d21d1e840-vm, headers: {Host: waimao.diaodada.uk}}}
+  - {name: waimao-CDN, server: rr.cloudflare.182682.xyz, port: 8443, type: vmess, uuid: e30e5299-bda8-4a6a-8c20-0a9d21d1e840, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: waimao.diaodada.uk, network: ws, ws-opts: {path: e30e5299-bda8-4a6a-8c20-0a9d21d1e840-vm, headers: {Host: waimao.diaodada.uk}}}  
   - {name: vl-reality-DC02, server: 74.48.116.107, port: 28346, type: vless, uuid: 4af8b054-5e30-474e-bf7c-97fc9b849996, udp: true, flow: xtls-rprx-vision, packet-encoding: xudp, tls: true, skip-cert-verify: true, servername: m.media-amazon.com, client-fingerprint: chrome, encryption: "", network: tcp, reality-opts: {public-key: 5vRzPLYAKfzwPONmywvGw3uSMfAYykYmkxPnVro27HE, short-id: 3de13665}}
   - {name: vl-reality-HK, server: 149.104.29.26, port: 57204, type: vless, uuid: 647ae682-60df-416c-ac50-60cf34541b4c, udp: true, flow: xtls-rprx-vision, packet-encoding: xudp, tls: true, skip-cert-verify: true, servername: www.yahoo.com, client-fingerprint: chrome, encryption: "", network: tcp, reality-opts: {public-key: PA3pyNmMYA0j455sswd2W8hx76ntvO4sCHG13qxODEU, short-id: e84e5d35}}
+  - {name: vl-reality-Oracle, server: 140.238.13.124, port: 12386, type: vless, uuid: 6147e105-56ac-43b9-8d50-9d6cfe3de2b5, udp: true, flow: xtls-rprx-vision, packet-encoding: xudp, tls: true, skip-cert-verify: true, servername: www.yahoo.com, client-fingerprint: chrome, encryption: "", network: tcp, reality-opts: {public-key: hDHvogoeA5y_tQk2Yas0jVr4nYn_ZmBsHZ-Ce02EgxQ, short-id: ef479066}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -38,6 +39,7 @@ proxy-groups:
       - waimao-CDN
       - vl-reality-DC02
       - vl-reality-HK
+      - vl-reality-Oracle
 
   - name: ♻️ 自动选择
     type: url-test
@@ -53,6 +55,7 @@ proxy-groups:
       - waimao-CDN
       - vl-reality-DC02
       - vl-reality-HK
+      - vl-reality-Oracle
 
   - name: 🌍 国外媒体
     type: select
@@ -67,6 +70,7 @@ proxy-groups:
       - waimao-CDN
       - vl-reality-DC02
       - vl-reality-HK
+      - vl-reality-Oracle
 
   - name: 📲 电报信息
     type: select
@@ -80,6 +84,7 @@ proxy-groups:
       - waimao-CDN
       - vl-reality-DC02
       - vl-reality-HK
+      - vl-reality-Oracle
       - DIRECT
 
   - name: Ⓜ️ 微软服务
@@ -95,6 +100,7 @@ proxy-groups:
       - waimao-CDN
       - vl-reality-DC02
       - vl-reality-HK
+      - vl-reality-Oracle
 
   - name: 🍎 苹果服务
     type: select
@@ -109,6 +115,7 @@ proxy-groups:
       - waimao-CDN
       - vl-reality-DC02
       - vl-reality-HK
+      - vl-reality-Oracle
 
   - name: 🎯 全球直连
     type: select
@@ -123,6 +130,7 @@ proxy-groups:
       - waimao-CDN
       - vl-reality-DC02
       - vl-reality-HK
+      - vl-reality-Oracle
 
   - name: 🛑 全球拦截
     type: select
@@ -148,6 +156,7 @@ proxy-groups:
       - waimao-CDN
       - vl-reality-DC02
       - vl-reality-HK
+      - vl-reality-Oracle
       - DIRECT
       
 rules:
