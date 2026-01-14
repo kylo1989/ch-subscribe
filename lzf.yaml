@@ -64,7 +64,6 @@ proxy-groups:
       - waimao
       - waimao-CDN
       - vl-reality-DC02
-      - vl-reality-DC02
 
   - name: 📲 电报信息
     type: select
