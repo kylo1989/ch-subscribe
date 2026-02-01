@@ -26,6 +26,8 @@ proxies:
   - {name: vl-reality-HK, server: 149.104.29.26, port: 57204, type: vless, uuid: 647ae682-60df-416c-ac50-60cf34541b4c, udp: true, flow: xtls-rprx-vision, packet-encoding: xudp, tls: true, skip-cert-verify: true, servername: www.yahoo.com, client-fingerprint: chrome, encryption: "", network: tcp, reality-opts: {public-key: PA3pyNmMYA0j455sswd2W8hx76ntvO4sCHG13qxODEU, short-id: e84e5d35}}
   - {name: vl-reality-Oracle, server: 140.238.13.124, port: 12386, type: vless, uuid: 6147e105-56ac-43b9-8d50-9d6cfe3de2b5, udp: true, flow: xtls-rprx-vision, packet-encoding: xudp, tls: true, skip-cert-verify: true, servername: www.yahoo.com, client-fingerprint: chrome, encryption: "", network: tcp, reality-opts: {public-key: hDHvogoeA5y_tQk2Yas0jVr4nYn_ZmBsHZ-Ce02EgxQ, short-id: ef479066}}
   - {name: reality-DMIT, server: 69.63.196.24, port: 39267, type: vless, uuid: 1bde96a1-a9ff-4c2d-b0d4-de82bf7a1655, udp: true, flow: xtls-rprx-vision, packet-encoding: xudp, tls: true, skip-cert-verify: true, servername: mercurius-foundation-preview.ptt.moe, client-fingerprint: chrome, encryption: none, network: tcp, reality-opts: {public-key: ToygyNvx8aZf4RXX1ZM2UUSXN3oAKibMmJl8yrO7iBI, short-id: 104f0749de1b8ed6}}
+  - {name: reality-Lazycats, server: 38.150.4.46, port: 55005, type: vless, uuid: 7134b92a-18d6-478e-aafe-283503811073, udp: true, flow: xtls-rprx-vision, packet-encoding: xudp, tls: true, skip-cert-verify: true, servername: www.au-awholesalesteaks.shop, client-fingerprint: chrome, encryption: none, network: tcp, reality-opts: {public-key: ZFYZIxokQeu31yzuBmy-NsfGF9J2kdQIm3gH2waB5C0, short-id: 79d3ac52406868cd}}
+
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -42,6 +44,7 @@ proxy-groups:
       - vl-reality-HK
       - vl-reality-Oracle
       - reality-DMIT
+      - reality-Lazycats
 
   - name: ♻️ 自动选择
     type: url-test
@@ -59,6 +62,7 @@ proxy-groups:
       - vl-reality-HK
       - vl-reality-Oracle
       - reality-DMIT
+      - reality-Lazycats
 
   - name: 🌍 国外媒体
     type: select
@@ -75,6 +79,7 @@ proxy-groups:
       - vl-reality-HK
       - vl-reality-Oracle
       - reality-DMIT
+      - reality-Lazycats
 
   - name: 📲 电报信息
     type: select
@@ -90,6 +95,7 @@ proxy-groups:
       - vl-reality-HK
       - vl-reality-Oracle
       - reality-DMIT
+      - reality-Lazycats
       - DIRECT
 
   - name: Ⓜ️ 微软服务
@@ -107,6 +113,7 @@ proxy-groups:
       - vl-reality-HK
       - vl-reality-Oracle
       - reality-DMIT
+      - reality-Lazycats
 
   - name: 🍎 苹果服务
     type: select
@@ -123,6 +130,7 @@ proxy-groups:
       - vl-reality-HK
       - vl-reality-Oracle
       - reality-DMIT
+      - reality-Lazycats
 
   - name: 🎯 全球直连
     type: select
@@ -139,6 +147,7 @@ proxy-groups:
       - vl-reality-HK
       - vl-reality-Oracle
       - reality-DMIT
+      - reality-Lazycats
 
   - name: 🛑 全球拦截
     type: select
@@ -166,6 +175,7 @@ proxy-groups:
       - vl-reality-HK
       - vl-reality-Oracle
       - reality-DMIT
+      - reality-Lazycats
       - DIRECT
       
 rules:
