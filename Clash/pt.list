@@ -1,16 +1,19 @@
-# PT 专用直连规则集
-# 监听端口 (根据你的 qB 实际设置修改)
+# 内容：PT 专用直连规则集 (Mihomo Remote List)
+# 更新：2026-02-11 18:55:00
+# 数量：22 条
+
+# --- 监听端口 (根据 qB 实际设置修改) ---
 SRC-PORT,34058
 SRC-PORT,8085
 
-# 常见 Tracker 关键词
+# --- 常见 Tracker 关键词 ---
 DOMAIN-KEYWORD,tracker
 DOMAIN-KEYWORD,announce
 DOMAIN-KEYWORD,torrent
 DOMAIN-KEYWORD,peer_id
 DOMAIN-KEYWORD,info_hash
 
-# 常见 PT 站域名补全 (防止被分流到国外媒体)
+# --- 常见 PT 站域名补全 (防止被分流到国外媒体) ---
 DOMAIN-SUFFIX,haidan.video
 DOMAIN-SUFFIX,hdfans.org
 DOMAIN-SUFFIX,ptchina.org
@@ -22,3 +25,7 @@ DOMAIN-SUFFIX,m-team.cc
 DOMAIN-SUFFIX,chdbits.co
 DOMAIN-SUFFIX,ourbits.club
 DOMAIN-SUFFIX,keepfrds.com
+DOMAIN-SUFFIX,u2.dmhy.org
+DOMAIN-SUFFIX,pterclub.com
+DOMAIN-SUFFIX,audiences.me
+DOMAIN-SUFFIX,totheglory.im
