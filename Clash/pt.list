@@ -1,6 +1,6 @@
 # 内容：PT 专用直连规则集 (Mihomo Remote List)
-# 更新：2026-02-11 18:55:00
-# 数量：22 条
+# 更新：2026-02-11 18:58:00
+# 数量：24 条
 
 # --- 监听端口 (根据 qB 实际设置修改) ---
 SRC-PORT,34058
@@ -29,3 +29,7 @@ DOMAIN-SUFFIX,u2.dmhy.org
 DOMAIN-SUFFIX,pterclub.com
 DOMAIN-SUFFIX,audiences.me
 DOMAIN-SUFFIX,totheglory.im
+
+# --- 订阅与后端地址 ---
+DOMAIN-SUFFIX,diaodada.uk
+DOMAIN-SUFFIX,qqqb.de
