@@ -1,69 +1,55 @@
-# 内容：自定义魔法网站
-# 更新：2026-02-09 20:43:17
-# 数量：XX条
+# 内容：自定义魔法网站与规则集
+# 更新：2026-02-11 18:50:00
+# 数量：38 条
 
-# 
-bing.com
-sspanel.net
-v2ex.com
+# --- 搜索与常用站点 ---
+DOMAIN-SUFFIX,bing.com
+DOMAIN-SUFFIX,v2ex.com
+DOMAIN-SUFFIX,sspanel.net
+DOMAIN-SUFFIX,nodeseek.com
+DOMAIN-SUFFIX,linux.do
 
-#google
-googleapis.cn
-googleapis.com
-google.com.tw
-google.com.hk
-gstatic.com
-xn--ngstr-lra8j.com
+# --- Google 相关 ---
+DOMAIN-SUFFIX,google.com.hk
+DOMAIN-SUFFIX,google.com.tw
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,googleapis.cn
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-KEYWORD,xn--ngstr-lra8j
 
-#github
-github.com
-github.global.ssl.fastly.net
-assets-cdn.github.com
-githubusercontent.com
-release-assets.githubusercontent.com
+# --- GitHub 相关 ---
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,githubusercontent.com
+DOMAIN-SUFFIX,assets-cdn.github.com
+DOMAIN-SUFFIX,github.global.ssl.fastly.net
 
-#PT
-v2ex.com
-haidan.video
-hdfans.org
-ptchina.org
-pandapt.net
-hdpt.xyz
-ubits.club
-hdtime.org
+# --- Spotify 音乐服务 ---
+DOMAIN-SUFFIX,spotify.com
+DOMAIN-SUFFIX,spoti.fi
+DOMAIN-SUFFIX,pscdn.co
+DOMAIN-SUFFIX,scdn.co
+DOMAIN-SUFFIX,akamaized.net
 
-#spotify
-pscdn.co
-scdn.co
-spotify.com
-spoti.fi
-spotify.com
-audio-akp-bbr-spotify-com.akamaized.net
-audio4-ak-spotify-com.akamaized.net
-audio-ak-spotify-com.akamaized.net
-heads-ak-spotify-com.akamaized.net
+# --- 其他工具与服务 ---
+DOMAIN-SUFFIX,imgur.com
+DOMAIN-SUFFIX,cloudflare.com
+DOMAIN-SUFFIX,racknerd.com
+DOMAIN-SUFFIX,windows.net
+DOMAIN-SUFFIX,apkpure.com
+DOMAIN-SUFFIX,spotiffyapk.com
+DOMAIN-SUFFIX,sourceforge.net
+DOMAIN-SUFFIX,battle.net
+DOMAIN-SUFFIX,web.telegram.org
+DOMAIN-SUFFIX,sdsetup.com
+DOMAIN-SUFFIX,minepi.com
+DOMAIN-SUFFIX,node123.eu.org
+DOMAIN-SUFFIX,leijing.xyz
+DOMAIN-SUFFIX,haimianxz.com
 
-#others
-haimianxz.com
-leijing.xyz
-imgur.com
-racknerd.com
-cloudflare.com
-windows.net
-apkpure.com
-spotiffyapk.com
-sourceforge.net
-battle.net
-web.telegram.org
-download.semiconductor.samsung.com
-sdsetup.com
-damassets.autodesk.net
-minepi.com
-downloads.freepbxdistro.org
-maricopa.edu
-grokipedia.com
-node123.eu.org
-beacon.ssdxz.cn
-nodeseek.com
-minepi.com
-linux.do
+# --- 行业与教育下载 ---
+DOMAIN-SUFFIX,autodesk.net
+DOMAIN-SUFFIX,freepbxdistro.org
+DOMAIN-SUFFIX,maricopa.edu
+DOMAIN-SUFFIX,grokipedia.com
+DOMAIN-SUFFIX,ssdxz.cn
