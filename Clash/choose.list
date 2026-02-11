@@ -22,7 +22,6 @@ DOMAIN-KEYWORD,xn--ngstr-lra8j
 DOMAIN-SUFFIX,github.com
 DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,assets-cdn.github.com
-DOMAIN-SUFFIX,github.global.ssl.fastly.net
 
 # --- Spotify 音乐服务 ---
 DOMAIN-SUFFIX,spotify.com
@@ -40,7 +39,7 @@ DOMAIN-SUFFIX,apkpure.com
 DOMAIN-SUFFIX,spotiffyapk.com
 DOMAIN-SUFFIX,sourceforge.net
 DOMAIN-SUFFIX,battle.net
-DOMAIN-SUFFIX,web.telegram.org
+DOMAIN-SUFFIX,telegram.org
 DOMAIN-SUFFIX,sdsetup.com
 DOMAIN-SUFFIX,minepi.com
 DOMAIN-SUFFIX,node123.eu.org
