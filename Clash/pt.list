@@ -1,0 +1,25 @@
+# PT 专用直连规则集
+# 监听端口 (根据你的 qB 实际设置修改)
+SRC-PORT,34058
+SRC-PORT,8085
+
+# 常见 Tracker 关键词
+DOMAIN-KEYWORD,tracker
+DOMAIN-KEYWORD,announce
+DOMAIN-KEYWORD,torrent
+DOMAIN-KEYWORD,peer_id
+DOMAIN-KEYWORD,info_hash
+
+# 常见 PT 站域名补全 (防止被分流到国外媒体)
+DOMAIN-SUFFIX,v2ex.com
+DOMAIN-SUFFIX,haidan.video
+DOMAIN-SUFFIX,hdfans.org
+DOMAIN-SUFFIX,ptchina.org
+DOMAIN-SUFFIX,pandapt.net
+DOMAIN-SUFFIX,hdpt.xyz
+DOMAIN-SUFFIX,ubits.club
+DOMAIN-SUFFIX,hdtime.org
+DOMAIN-SUFFIX,m-team.cc
+DOMAIN-SUFFIX,chdbits.co
+DOMAIN-SUFFIX,ourbits.club
+DOMAIN-SUFFIX,keepfrds.com
