@@ -1,8 +1,8 @@
 # 内容：PT 专用直连规则集 (Mihomo Remote List)
-# 更新：2026-02-11 18:58:00
-# 数量：24 条
+# 更新：2026-02-11 20:10:00
+# 数量：23 条
 
-# --- 监听端口 (根据 qB 实际设置修改) ---
+# --- 监听端口 ---
 SRC-PORT,34058
 SRC-PORT,8085
 
@@ -13,7 +13,7 @@ DOMAIN-KEYWORD,torrent
 DOMAIN-KEYWORD,peer_id
 DOMAIN-KEYWORD,info_hash
 
-# --- 常见 PT 站域名补全 (防止被分流到国外媒体) ---
+# --- 常见 PT 站域名补全 ---
 DOMAIN-SUFFIX,haidan.video
 DOMAIN-SUFFIX,hdfans.org
 DOMAIN-SUFFIX,ptchina.org
