@@ -34,6 +34,7 @@ DOMAIN-SUFFIX,akamaized.net
 
 # --- 其他工具与服务 ---
 DOMAIN-SUFFIX,imgur.com
+DOMAIN-SUFFIX,111666.best
 DOMAIN-SUFFIX,cloudflare.com
 DOMAIN-SUFFIX,racknerd.com
 DOMAIN-SUFFIX,windows.net
