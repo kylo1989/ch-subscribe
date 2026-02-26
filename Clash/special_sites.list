@@ -1,0 +1,7 @@
+# 内容：特殊站点使用电报信息指定节点
+# 更新：2026-02-26 22:07:00
+# 数量：2 条
+
+# --- 特殊站点规则 ---
+DOMAIN-SUFFIX,nodeseek.com
+DOMAIN-SUFFIX,nodeimage.com
