@@ -1,8 +1,8 @@
 # 内容：自定义魔法网站与规则集
-# 更新：2026-02-11 18:55:00
-# 数量：38 条
+# 更新：2026-02-28 15:25:00
+# 数量：48 条
 
-# --- 搜索与常用站点 ---
+# --- 搜索与常用站点 (6) ---
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,v2ex.com
 DOMAIN-SUFFIX,sspanel.net
@@ -10,7 +10,7 @@ DOMAIN-SUFFIX,linux.do
 DOMAIN-SUFFIX,xdaforums.com
 DOMAIN-SUFFIX,nsmhub.com
 
-# --- Google 相关 ---
+# --- Google 相关 (7) ---
 DOMAIN-SUFFIX,google.com.hk
 DOMAIN-SUFFIX,google.com.tw
 DOMAIN-SUFFIX,googleapis.com
@@ -19,19 +19,19 @@ DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,googleusercontent.com
 DOMAIN-KEYWORD,xn--ngstr-lra8j
 
-# --- GitHub 相关 ---
+# --- GitHub 相关 (3) ---
 DOMAIN-SUFFIX,github.com
 DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,assets-cdn.github.com
 
-# --- Spotify 音乐服务 ---
+# --- Spotify 音乐服务 (5) ---
 DOMAIN-SUFFIX,spotify.com
 DOMAIN-SUFFIX,spoti.fi
 DOMAIN-SUFFIX,pscdn.co
 DOMAIN-SUFFIX,scdn.co
 DOMAIN-SUFFIX,akamaized.net
 
-# --- 其他工具与服务 ---
+# --- 其他工具与服务 (11) ---
 DOMAIN-SUFFIX,imgur.com
 DOMAIN-SUFFIX,111666.best
 DOMAIN-SUFFIX,cloudflare.com
@@ -49,6 +49,9 @@ DOMAIN-SUFFIX,leijing.xyz
 DOMAIN-SUFFIX,haimianxz.com
 DOMAIN-SUFFIX,idcflare.com
 DOMAIN-SUFFIX,freedom.gov
+DOMAIN-SUFFIX,gifyu.com
+
+# --- TorrentKitty 系列 (10) ---
 DOMAIN-SUFFIX,torrentkitty.com
 DOMAIN-SUFFIX,torrentkitty.tv
 DOMAIN-SUFFIX,torrentkitty.io
@@ -59,9 +62,8 @@ DOMAIN-SUFFIX,torrentkitty.asia
 DOMAIN-SUFFIX,torrentkitty.cam
 DOMAIN-SUFFIX,torrentkitty.one
 DOMAIN-SUFFIX,torrentkitty.dev
-DOMAIN-SUFFIX,gifyu.com
 
-# --- 行业与教育下载 ---
+# --- 行业与教育下载 (6) ---
 DOMAIN-SUFFIX,autodesk.net
 DOMAIN-SUFFIX,freepbxdistro.org
 DOMAIN-SUFFIX,maricopa.edu
