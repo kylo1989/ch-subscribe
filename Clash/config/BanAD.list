@@ -1,0 +1,14 @@
+# 本碎片只包含常见广告关键字、广告联盟、欺诈网站。无副作用，放心使用
+
+# 广告关键词
+DOMAIN-KEYWORD,admarvel
+
+
+# 广告联盟-国内****************
+DOMAIN-SUFFIX,09mk.cn
+
+# 广告联盟-国外****************
+DOMAIN-SUFFIX,acuityplatform.com
+
+# 欺诈网站****************
+DOMAIN-SUFFIX,zte88.top
