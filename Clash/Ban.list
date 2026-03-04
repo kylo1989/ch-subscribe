@@ -1,0 +1,15 @@
+# 内容：全球拦截与欺诈屏蔽规则集 (Mihomo Remote List)
+# 更新：2026-03-04 17:35:00
+# 数量：4 条
+
+# --- 广告关键词 ---
+#DOMAIN-KEYWORD,admarvel
+
+# --- 广告联盟-国内 ---
+#DOMAIN-SUFFIX,09mk.cn
+
+# --- 广告联盟-国外 ---
+#DOMAIN-SUFFIX,acuityplatform.com
+
+# --- 欺诈网站 ---
+DOMAIN-SUFFIX,zte88.top
