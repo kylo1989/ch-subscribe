@@ -3,10 +3,9 @@
 # 数量：468 条
 
 --- 广告关键词 ---
-DOMAIN-KEYWORD,admarvel
+#DOMAIN-KEYWORD,admarvel
 
 --- 广告联盟-国内 ---
-DOMAIN-SUFFIX,09mk.cn
 DOMAIN-SUFFIX,livew.l.qq.com
 DOMAIN-SUFFIX,t7z.cupid.iqiyi.com
 DOMAIN-SUFFIX,wxsnsdy.wxs.qq.com
@@ -135,7 +134,6 @@ DOMAIN-SUFFIX,z6.cnzz.com
 DOMAIN-SUFFIX,z7.cnzz.com
 
 --- 广告联盟-国外 ---
-DOMAIN-SUFFIX,acuityplatform.com
 DOMAIN-SUFFIX,adsdk.yandex.ru
 DOMAIN-SUFFIX,hybird.rayjump.com
 DOMAIN-SUFFIX,api.adxpand.com
