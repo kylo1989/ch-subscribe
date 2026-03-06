@@ -86,7 +86,12 @@ export default {
                 socks5 = url.searchParams.get('http');
                 最终路径 = 全局socks5 ? `/http://${socks5}` : `/http=${socks5}`;
             }
-
+// ======= 新增修改部分开始 =======
+// 2. 检查 URL 中是否有自定义 path 参数，如果有则强制使用用户定义的路径
+            if (url.searchParams.has('path') && url.searchParams.get('path').trim() !== '') {
+                最终路径 = url.searchParams.get('path');
+            }
+// ======= 新增修改部分结束 =======
             if (url.searchParams.has('ed') && url.searchParams.get('ed') != '') 最终路径 += `?ed=${url.searchParams.get('ed')}`;
             const 跳过证书验证 = (url.searchParams.has('scv')) ? true : false;
 
