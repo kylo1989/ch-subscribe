@@ -1,6 +1,6 @@
 saas.sin.fan:443#JP 优选域名
-cf.090227.xyz:443#CM 优选域名
-cloudflare.182682.xyz#WeTest.Vip 优选域名
+cf.090227.xyz:443#JP CM域名
+cloudflare.182682.xyz#JP WTV域名
 108.162.198.80:443#JP 官方优选
 162.159.44.224:443#JP 官方优选
 108.162.198.180:443#JP 官方优选
