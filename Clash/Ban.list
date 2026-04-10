@@ -170,4 +170,5 @@ DOMAIN-SUFFIX,in.vipliangmei.com
 DOMAIN-SUFFIX,keybut.com
 
 --- 反激活验证 ---
-DOMAIN-SUFFIX,zte88.top
+IP-CIDR,101.32.72.254/32,REJECT
+IP-CIDR,45.56.98.223/32,REJECT
