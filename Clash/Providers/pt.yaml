@@ -1,0 +1,42 @@
+payload:
+  # --- 监听端口 ---
+  - SRC-PORT,34058
+  - SRC-PORT,8085
+  - SRC-PORT,9090
+  - SRC-PORT,5666
+  - SRC-PORT,8005
+  - SRC-PORT,3000
+  - SRC-PORT,5000
+  - SRC-PORT,5001
+  - SRC-PORT,15001
+  - SRC-PORT,8080
+  - SRC-PORT,19787
+  - SRC-PORT,63219
+
+  # --- 常见 Tracker 关键词 ---
+  - DOMAIN-KEYWORD,tracker
+  - DOMAIN-KEYWORD,announce
+  - DOMAIN-KEYWORD,torrent
+  - DOMAIN-KEYWORD,peer_id
+  - DOMAIN-KEYWORD,info_hash
+
+  # --- 常见 PT 站域名补全 ---
+  - DOMAIN-SUFFIX,haidan.video
+  - DOMAIN-SUFFIX,hdfans.org
+  - DOMAIN-SUFFIX,ptchina.org
+  - DOMAIN-SUFFIX,pandapt.net
+  - DOMAIN-SUFFIX,hdpt.xyz
+  - DOMAIN-SUFFIX,ubits.club
+  - DOMAIN-SUFFIX,hdtime.org
+  - DOMAIN-SUFFIX,m-team.cc
+  - DOMAIN-SUFFIX,chdbits.co
+  - DOMAIN-SUFFIX,ourbits.club
+  - DOMAIN-SUFFIX,keepfrds.com
+  - DOMAIN-SUFFIX,pterclub.net
+  - DOMAIN-SUFFIX,audiences.me
+  - DOMAIN-SUFFIX,totheglory.im
+  - DOMAIN-SUFFIX,piggo.me
+
+  # --- 订阅与后端地址 ---
+  - DOMAIN-SUFFIX,diaodada.uk
+  - DOMAIN-SUFFIX,qqqb.de
