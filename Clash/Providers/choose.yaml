@@ -1,1 +1,83 @@
+# 内容：自定义魔法网站与规则集
+# 更新：2026-02-28 15:25:00
+# 数量：48 条
 
+# --- 搜索与常用站点 (6) ---
+DOMAIN-SUFFIX,bing.com
+DOMAIN-SUFFIX,v2ex.com
+DOMAIN-SUFFIX,sspanel.net
+DOMAIN-SUFFIX,linux.do
+DOMAIN-SUFFIX,xdaforums.com
+DOMAIN-SUFFIX,nsmhub.com
+DOMAIN-SUFFIX,stun.l.google.com
+DOMAIN-SUFFIX,unun.dev
+
+# --- Google 相关 (7) ---
+DOMAIN-SUFFIX,google.com.hk
+DOMAIN-SUFFIX,google.com.tw
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,googleapis.cn
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-KEYWORD,xn--ngstr-lra8j
+
+# --- GitHub 相关 (3) ---
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,githubusercontent.com
+DOMAIN-SUFFIX,assets-cdn.github.com
+
+# --- Spotify 音乐服务 (5) ---
+DOMAIN-SUFFIX,spotify.com
+DOMAIN-SUFFIX,spoti.fi
+DOMAIN-SUFFIX,pscdn.co
+DOMAIN-SUFFIX,scdn.co
+DOMAIN-SUFFIX,akamaized.net
+
+# --- 其他工具与服务 (11) ---
+DOMAIN-SUFFIX,imgur.com
+DOMAIN-SUFFIX,111666.best
+DOMAIN-SUFFIX,cloudflare.com
+DOMAIN-SUFFIX,racknerd.com
+DOMAIN-SUFFIX,windows.net
+DOMAIN-SUFFIX,apkpure.com
+DOMAIN-SUFFIX,spotiffyapk.com
+DOMAIN-SUFFIX,sourceforge.net
+DOMAIN-SUFFIX,battle.net
+DOMAIN-SUFFIX,telegram.org
+DOMAIN-SUFFIX,sdsetup.com
+DOMAIN-SUFFIX,minepi.com
+DOMAIN-SUFFIX,node123.eu.org
+DOMAIN-SUFFIX,leijing.xyz
+DOMAIN-SUFFIX,haimianxz.com
+DOMAIN-SUFFIX,idcflare.com
+DOMAIN-SUFFIX,freedom.gov
+DOMAIN-SUFFIX,gifyu.com
+DOMAIN-SUFFIX,cmliussss.com
+DOMAIN-SUFFIX,greasyfork.org
+DOMAIN-SUFFIX,erpweb.eu.org
+DOMAIN-SUFFIX,clashverge.dev
+DOMAIN-SUFFIX,mobile01.com
+DOMAIN-SUFFIX,ippure.com
+DOMAIN-SUFFIX,v2rayssr.com
+DOMAIN-SUFFIX,winudf.com
+DOMAIN-SUFFIX,haijiao.com
+
+# --- TorrentKitty 系列 (10) ---
+DOMAIN-SUFFIX,torrentkitty.com
+DOMAIN-SUFFIX,torrentkitty.tv
+DOMAIN-SUFFIX,torrentkitty.io
+DOMAIN-SUFFIX,torrentkitty.live
+DOMAIN-SUFFIX,torkitty.net
+DOMAIN-SUFFIX,torrentkitty.ink
+DOMAIN-SUFFIX,torrentkitty.asia
+DOMAIN-SUFFIX,torrentkitty.cam
+DOMAIN-SUFFIX,torrentkitty.one
+DOMAIN-SUFFIX,torrentkitty.dev
+
+# --- 行业与教育下载 (6) ---
+DOMAIN-SUFFIX,autodesk.net
+DOMAIN-SUFFIX,freepbxdistro.org
+DOMAIN-SUFFIX,maricopa.edu
+DOMAIN-SUFFIX,grokipedia.com
+DOMAIN-SUFFIX,happyfappy.org
+DOMAIN-SUFFIX,ssdxz.cn
