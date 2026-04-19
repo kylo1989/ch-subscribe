@@ -1,0 +1,7 @@
+payload:
+  # --- 特殊站点规则 ---
+  - DOMAIN-SUFFIX,nodeseek.com
+  - DOMAIN-SUFFIX,nodeimage.com
+  - DOMAIN-SUFFIX,grok.com
+  - DOMAIN-SUFFIX,xiaomi.eu
+  - DOMAIN-SUFFIX,nodequality.com
