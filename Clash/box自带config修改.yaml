@@ -91,6 +91,8 @@ sniffer:
   sniff:
     HTTP:
       ports: [80, 8080-8880]
+    TLS:                                # 补充 TLS 嗅探
+      ports: [443, 8443]                # 补充 TLS 端口
     QUIC:
       ports: [443, 8443]
   force-domain:
@@ -119,6 +121,11 @@ dns:
   fake-ip-range: 198.18.0.0/16
   fake-ip-range6: fdfe:dcba:9876::/48
   fake-ip-filter:
+    - "*.lan"
+    - "*.localdomain"
+    - "+.taobao.com"
+    - "+.baidu.com"
+    - "+.qq.com"
     - "RULE-SET:CN_域"
     - "RULE-SET:Private_域"
     - "RULE-SET:GoogleFCM_域"
@@ -135,6 +142,9 @@ dns:
       - https://223.5.5.5:443/dns-query#🌐 本机·本地直连&h3=true
       - https://223.6.6.6:443/dns-query#🌐 本机·本地直连&h3=true
   nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+    - 114.114.114.114
     - https://8.8.8.8:443/dns-query#DNS连接&h3=true
     - https://8.8.4.4:443/dns-query#DNS连接&h3=true
     - https://1.1.1.1:443/dns-query#DNS连接&h3=true
@@ -463,16 +473,20 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/kylo1989/ch-subscribe@main/Clash/Ban.list"
   Choose_Google:
     <<: *Classical
-    path: ./rules/Choose_Google.yaml
+    path: ./rules/Choose_Google.list
     url: "https://cdn.jsdelivr.net/gh/kylo1989/ch-subscribe@main/Clash/choose.list"
   PT_本地直连:
     <<: *Classical
-    path: ./rules/PT.yaml
+    path: ./rules/PT.list
     url: "https://cdn.jsdelivr.net/gh/kylo1989/ch-subscribe@main/Clash/pt.list"
   Special_特殊地址:
     <<: *Classical
-    path: ./rules/Special_Sites.yaml
+    path: ./rules/Special_Sites.list
     url: "https://cdn.jsdelivr.net/gh/kylo1989/ch-subscribe@main/Clash/special_sites.list"
+  GFW名单:
+    <<: *Domain
+    path: ./rules/GFW.mrs
+    url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/gfw.mrs"
 
 # —————————
 rules:
@@ -515,10 +529,11 @@ rules:
   - RULE-SET,Microsoft_域,Microsoft
   - RULE-SET,Telegram_域,Telegram
   - RULE-SET,Telegram_IP,Telegram,no-resolve
+  - RULE-SET,GFW名单,Google
   - RULE-SET,Private_域,🌐 本机·本地直连
   - RULE-SET,Private_IP,🌐 本机·本地直连,no-resolve
   - RULE-SET,CN_域,🌐 本机·本地直连
-  - RULE-SET,CN_IP,🌐 本机·本地直连
+  - RULE-SET,CN_IP,🌐 本机·本地直连,no-resolve
   - RULE-SET,自定义规则,特殊地址
   - MATCH,漏网之鱼
 # —————————
