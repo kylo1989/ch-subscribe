@@ -36,6 +36,7 @@ payload:
   - DOMAIN-SUFFIX,audiences.me
   - DOMAIN-SUFFIX,totheglory.im
   - DOMAIN-SUFFIX,piggo.me
+  - DOMAIN-SUFFIX,star-space.net
 
   # --- 订阅与后端地址 ---
   - DOMAIN-SUFFIX,diaodada.uk
