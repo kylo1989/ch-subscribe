@@ -17,10 +17,11 @@ payload:
   - DOMAIN-SUFFIX,gstatic.com
   - DOMAIN-SUFFIX,googleusercontent.com
   - DOMAIN-KEYWORD,xn--ngstr-lra8j
-  - DOMAIN-KEYWORD,voice.telephony.goog
-  - DOMAIN-KEYWORD,stun.l.google.com
-  - DOMAIN-KEYWORD,time.google.com
-  - DOMAIN-KEYWORD,tmtalk.google.com
+  - DOMAIN-KEYWORD,telephony.goog
+  - DOMAIN-SUFFIX,stun.l.google.com
+  - DOMAIN-SUFFIX,time.google.com
+  - DOMAIN-SUFFIXD,tmtalk.google.com
+  - DOMAIN-SUFFIX,telephony.google.com
 
   # --- GitHub 相关 (3) ---
   - DOMAIN-SUFFIX,github.com
