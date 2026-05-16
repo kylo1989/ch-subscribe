@@ -67,6 +67,7 @@ payload:
   - DOMAIN-SUFFIX,haijiao.com
   - DOMAIN-SUFFIX,1pondo.com
   - DOMAIN-SUFFIX,1pondo.tv
+  - DOMAIN-SUFFIX,freetv.fun
 
   # --- TorrentKitty 系列 (10) ---
   - DOMAIN-SUFFIX,torrentkitty.com
