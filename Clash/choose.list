@@ -31,6 +31,7 @@ DOMAIN-SUFFIX,github.com
 DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,assets-cdn.github.com
 DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,githubcopilot.com
 
 # --- Spotify 音乐服务 (5) ---
 DOMAIN-SUFFIX,spotify.com
