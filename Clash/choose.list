@@ -25,6 +25,7 @@ DOMAIN-SUFFIX,stun.l.google.com
 DOMAIN-SUFFIX,time.google.com
 DOMAIN-SUFFIXD,tmtalk.google.com
 DOMAIN-SUFFIX,telephony.google.com
+DOMAIN-SUFFIX,googleusercontent.com
 
 # --- GitHub 相关 (3) ---
 DOMAIN-SUFFIX,github.com
