@@ -20,7 +20,7 @@ payload:
   - DOMAIN-KEYWORD,telephony.goog
   - DOMAIN-SUFFIX,stun.l.google.com
   - DOMAIN-SUFFIX,time.google.com
-  - DOMAIN-SUFFIXD,tmtalk.google.com
+  - DOMAIN-SUFFIX,mtalk.google.com
   - DOMAIN-SUFFIX,telephony.google.com
   - DOMAIN-SUFFIX,googleusercontent.com
 
