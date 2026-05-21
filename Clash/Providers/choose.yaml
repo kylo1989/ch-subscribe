@@ -23,6 +23,7 @@ payload:
   - DOMAIN-SUFFIX,mtalk.google.com
   - DOMAIN-SUFFIX,telephony.google.com
   - DOMAIN-SUFFIX,googleusercontent.com
+  - DOMAIN-SUFFIX,time.android.com
 
   # --- GitHub 相关 (3) ---
   - DOMAIN-SUFFIX,github.com
