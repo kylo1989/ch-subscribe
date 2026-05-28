@@ -41,3 +41,8 @@ payload:
   # --- 订阅与后端地址 ---
   - DOMAIN-SUFFIX,diaodada.uk
   - DOMAIN-SUFFIX,qqqb.de
+  - DOMAIN-SUFFIX,52799.de
+  - DOMAIN-SUFFIX,0736888.xyz
+  - DOMAIN-SUFFIX,cdcd.uk
+  - DOMAIN-SUFFIX,fnos.net
+  - DOMAIN-SUFFIX,fnnas.com
