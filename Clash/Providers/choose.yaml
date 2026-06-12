@@ -86,6 +86,8 @@ payload:
   - DOMAIN-SUFFIX,hanimeone.me
   - DOMAIN-SUFFIX,hanime1.com
   - DOMAIN-SUFFIX,hanime1.me
+  - DOMAIN-SUFFIX,javchu.com
+  - DOMAIN-SUFFIX,av.jkforum.net
 
   # --- TorrentKitty 系列 (10) ---
   - DOMAIN-SUFFIX,torrentkitty.com
