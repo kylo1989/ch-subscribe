@@ -81,6 +81,11 @@ payload:
   - DOMAIN-SUFFIX,xiaomi.eu
   - DOMAIN-SUFFIX,chatboxai.app
   - DOMAIN-SUFFIX,webshare.io
+  - DOMAIN-SUFFIX,missav.ai
+  - DOMAIN-SUFFIX,missav.live
+  - DOMAIN-SUFFIX,hanimeone.me
+  - DOMAIN-SUFFIX,hanime1.com
+  - DOMAIN-SUFFIX,hanime1.me
 
   # --- TorrentKitty 系列 (10) ---
   - DOMAIN-SUFFIX,torrentkitty.com
