@@ -14,6 +14,7 @@ payload:
   - SRC-PORT,63219
   - SRC-PORT,5666
   - SRC-PORT,5055
+  - SRC-PORT,1688
 
   # --- 常见 Tracker 关键词 ---
   - DOMAIN-KEYWORD,tracker
