@@ -487,6 +487,10 @@ rule-providers:
     <<: *Domain
     path: ./rules/GFW.mrs
     url: "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/gfw.mrs"
+  Porn名单:
+    <<: *Domain
+    path: ./rules/porn.list
+    url: "https://cdn.jsdelivr.net/gh/kylo1989/ch-subscribe@main/Clash/porn.list"
 
 # —————————
 rules:
@@ -494,6 +498,7 @@ rules:
   - RULE-SET,Ban_广告拦截,广告拦截
   - RULE-SET,Special_特殊地址,特殊地址
   - RULE-SET,Choose_Google,Google
+  - RULE-SET,Porn名单,Google
   - RULE-SET,PT_本地直连,🌐 本机·本地直连
 
   # --- 优先级 2：系统默认及其他规则 ---
