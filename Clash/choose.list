@@ -95,6 +95,15 @@ DOMAIN-SUFFIX,steamcommunity.com
 DOMAIN-SUFFIX,manyvids.com
 DOMAIN-SUFFIX,api.myip.la
 DOMAIN-SUFFIX,myip.ipip.net
+DOMAIN-SUFFIX,imdb.com
+DOMAIN-SUFFIX,media-imdb.com
+DOMAIN-SUFFIX,imdb.to
+DOMAIN-SUFFIX,thetvdb.com
+DOMAIN-SUFFIX,media-amazon.com
+DOMAIN-SUFFIX,fanart.tv
+DOMAIN-SUFFIX,trakt.tv
+DOMAIN-SUFFIX,themoviedb.org
+DOMAIN-SUFFIX,tmdb.org
 
 # --- TorrentKitty 系列 (10) ---
 DOMAIN-SUFFIX,torrentkitty.com
