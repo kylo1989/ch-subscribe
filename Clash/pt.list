@@ -53,3 +53,7 @@ DOMAIN-SUFFIX,cdcd.uk
 DOMAIN-SUFFIX,fnos.net
 DOMAIN-SUFFIX,fnnas.com
 DOMAIN-SUFFIX,bestcf.cmliussss.hidns.vip
+
+# NCSI 强制直连
+DOMAIN-KEYWORD,msftconnecttest
+DOMAIN-KEYWORD,msftncsi
