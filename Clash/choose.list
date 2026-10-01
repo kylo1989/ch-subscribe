@@ -104,6 +104,7 @@ DOMAIN-SUFFIX,fanart.tv
 DOMAIN-SUFFIX,trakt.tv
 DOMAIN-SUFFIX,themoviedb.org
 DOMAIN-SUFFIX,tmdb.org
+DOMAIN-SUFFIX,ip.sb
 
 # --- TorrentKitty 系列 (10) ---
 DOMAIN-SUFFIX,torrentkitty.com
