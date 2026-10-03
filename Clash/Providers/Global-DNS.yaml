@@ -55,6 +55,3 @@ payload:
   - DOMAIN-SUFFIX,freedns.controld.com
   - DOMAIN-SUFFIX,cleanbrowsing.org
   - DOMAIN-SUFFIX,doh.cleanbrowsing.org
-
-  # ================= DST-PORT (DoT 专用加密端口) =================
-  - DST-PORT,853
