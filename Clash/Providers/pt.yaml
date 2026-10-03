@@ -17,6 +17,22 @@ payload:
   - SRC-PORT,1688
   - SRC-PORT,9833
   - SRC-PORT,3389
+  - DST-PORT,3389
+  - DST-PORT,9833
+  - DST-PORT,8085
+  - DST-PORT,8096
+  - DST-PORT,5001
+  - DST-PORT,5000
+  - DST-PORT,22
+  - DST-PORT,34058
+  - DST-PORT,1688
+  - DST-PORT,15001
+  - DST-PORT,63219
+  - IP-CIDR,192.168.0.0/16
+  - IP-CIDR,10.0.0.0/8
+  - IP-CIDR,172.16.0.0/12
+  - DOMAIN,dsm.lizhangfeng.cn
+  - DOMAIN-SUFFIX,lizhangfeng.cn
 
   # --- 常见 Tracker 关键词 ---
   - DOMAIN-KEYWORD,tracker
