@@ -101,6 +101,8 @@ payload:
   - DOMAIN-SUFFIX,tmdb.org
   - DOMAIN-SUFFIX,ip.sb
   - DOMAIN-SUFFIX,opnsense.org
+  - DOMAIN-SUFFIX,huangguo.com
+  - DOMAIN-SUFFIX,huangguoduanju.net
 
   # --- TorrentKitty 系列 (10) ---
   - DOMAIN-SUFFIX,torrentkitty.com
