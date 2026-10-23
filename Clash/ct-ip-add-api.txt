@@ -10,10 +10,15 @@
 54.65.168.160:443#JP 优选反代
 13.193.183.187:443#JP 优选反代
 54.64.43.229:443#JP 优选反代
-140.235.11.73:443#SG 优选反代
-13.212.210.118:443#SG 优选反代
-13.213.38.199:443#SG 优选反代
-13.212.31.121:443#SG 优选反代
+
+thebeat.gehealthcare.com:2053#SG 电信优选
+versantstore.pearson.com:2096#SG 电信优选
+www.zendesk.com:443#SG 电信优选
+www.shopify.com:2083#SG 电信优选
+stores.staples.com:8443#SG 电信优选
+www.gov.il:443#SG 电信优选
+www.blibli.com:443#SG 电信优选
+www.mastervolt.com:2083#SG 电信优选
 
 104.19.24.208:2083#US 电信优选
 141.101.120.194:2083#US 电信优选
