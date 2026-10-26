@@ -7,9 +7,6 @@
 172.64.229.200:2096#JP 电信优选6
 172.64.229.98:2083#JP 电信优选7
 
-52.197.210.248:443#JP 优选反代
-
-
 thebeat.gehealthcare.com:2053#SG 电信优选
 versantstore.pearson.com:2096#SG 电信优选
 www.zendesk.com:443#SG 电信优选
