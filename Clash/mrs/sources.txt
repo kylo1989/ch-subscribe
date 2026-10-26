@@ -1,1 +1,13 @@
+# 你自己的 6 个规则集（使用相对路径直接读取本仓库文件）
+choose|../Providers/choose.yaml
+special_sites|../Providers/special_sites.yaml
+porn|../Providers/porn.yaml
+pt|../Providers/pt.yaml
+douyin-ip-media|../Providers/douyin-ip-media.yaml
+douyin-ip-api|../Providers/douyin-ip-api.yaml
 
+# ACL4SSR 的 4 个规则集
+LocalAreaNetwork|https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml
+UnBan|https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/UnBan.yaml
+NetEaseMusic|https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/NetEaseMusic.yaml
+ChinaMedia|https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaMedia.yaml
