@@ -1,1 +1,65 @@
+name: Build MRS Rulesets
 
+on:
+  schedule:
+    - cron: '0 20 * * *' # 每天北京时间凌晨 4 点自动运行
+  workflow_dispatch:     # 允许你在页面上手动点击运行
+  push:
+    paths:
+      - 'Clash/Providers/**'
+      - 'Clash/mrs/sources.txt'
+      - 'Clash/mrs/split_rules.py'
+      - '.github/workflows/build_mrs.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install PyYAML
+        run: pip install pyyaml
+
+      - name: Download Mihomo Binary
+        working-directory: ./Clash/mrs
+        run: |
+          LATEST_TAG=$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+          curl -L "https://github.com/MetaCubeX/mihomo/releases/download/${LATEST_TAG}/mihomo-linux-amd64-${LATEST_TAG}.gz" -o mihomo.gz
+          gunzip mihomo.gz
+          chmod +x mihomo
+
+      - name: Split Classical Rules
+        working-directory: ./Clash/mrs
+        run: python split_rules.py
+
+      - name: Convert to MRS
+        working-directory: ./Clash/mrs
+        run: |
+          for file in output/*_domain.yaml; do
+            [ -e "$file" ] || continue
+            base="${file%.yaml}"
+            ./mihomo convert-ruleset domain yaml "$file" "${base}.mrs"
+            rm -f "$file"
+          done
+          for file in output/*_ipcidr.yaml; do
+            [ -e "$file" ] || continue
+            base="${file%.yaml}"
+            ./mihomo convert-ruleset ipcidr yaml "$file" "${base}.mrs"
+            rm -f "$file"
+          done
+          rm -f mihomo
+
+      - name: Commit and Push MRS Files
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add Clash/mrs/output/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update mrs rulesets" && git push)
