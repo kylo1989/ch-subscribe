@@ -7,14 +7,12 @@
 172.64.229.200:2096#JP 电信优选6
 172.64.229.98:2083#JP 电信优选7
 
-thebeat.gehealthcare.com:2053#SG 电信优选
-versantstore.pearson.com:2096#SG 电信优选
-www.zendesk.com:443#SG 电信优选
-www.shopify.com:2083#SG 电信优选
-stores.staples.com:8443#SG 电信优选
-www.gov.il:443#SG 电信优选
-www.blibli.com:443#SG 电信优选
-www.mastervolt.com:2083#SG 电信优选
+104.18.47.112:2096#SG 电信优选1
+188.164.248.86:443#SG 电信优选2
+172.64.154.240:443#SG 电信优选3
+104.18.42.80:2087#SG 电信优选4
+104.18.35.166:2096#SG 电信优选5
+104.18.45.161:2096#SG 电信优选6
 
 104.19.24.208:2083#US 电信优选
 141.101.120.194:2083#US 电信优选
