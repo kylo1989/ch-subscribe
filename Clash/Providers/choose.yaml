@@ -103,6 +103,7 @@ payload:
   - DOMAIN-SUFFIX,opnsense.org
   - DOMAIN-SUFFIX,huangguo.com
   - DOMAIN-SUFFIX,huangguoduanju.net
+  - DOMAIN-SUFFIX,huangguoai.com
 
   # --- TorrentKitty 系列 (10) ---
   - DOMAIN-SUFFIX,torrentkitty.com
