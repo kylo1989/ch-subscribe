@@ -173,3 +173,10 @@ DOMAIN-SUFFIX,keybut.com
 --- 反激活验证 ---
 IP-CIDR,101.32.72.254/32
 IP-CIDR,45.56.98.223/32
+
+--- 反PCDN ---
+DOMAIN-SUFFIX,mcdn.bilivideo.cn
+DOMAIN-SUFFIX,mcdn.bilivideo.com
+DOMAIN-SUFFIX,szbdyd.com
+DOMAIN-SUFFIX,mountaintoys.cn
+DOMAIN-WILDCARD,*pcdn*.biliapi.net
