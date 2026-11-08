@@ -104,6 +104,7 @@ payload:
   - DOMAIN-SUFFIX,huangguo.com
   - DOMAIN-SUFFIX,huangguoduanju.net
   - DOMAIN-SUFFIX,huangguoai.com
+  - DOMAIN-SUFFIX,lazycat.wiki
 
   # --- TorrentKitty 系列 (10) ---
   - DOMAIN-SUFFIX,torrentkitty.com
