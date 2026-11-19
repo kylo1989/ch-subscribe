@@ -59,3 +59,5 @@ DOMAIN-SUFFIX,bestcf.cmliussss.hidns.vip
 # NCSI 强制直连
 DOMAIN-KEYWORD,msftconnecttest
 DOMAIN-KEYWORD,msftncsi
+DOMAIN-SUFFIX,msftconnecttest.com
+DOMAIN-SUFFIX,msftncsi.com
