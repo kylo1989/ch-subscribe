@@ -1,3 +1,19 @@
+saas.sin.fan:443#saas 大佬维护
+cloudflare.182682.xyz:443#WeTest 大佬维护
+skk.moe:443#Sukka 大佬维护
+bestcf.030101.xyz:443#MingYu 大佬维护
+cf.877774.xyz:443#QMS 大佬维护
+yg1.ygkkk.dpdns.org:443#YGKKK大佬维护
+cf.090227.xyz:443#CMLiu 大佬维护
+cf.3666888.xyz:443#HuTao 大佬维护
+cf.tencentapp.cn:443#KTFF 大佬维护
+ct.877774.xyz:443#电信QMS
+cu.877774.xyz:443#联通QMS
+cmcc.877774.xyz:443#移动QMS
+ct.cloudflare.byoip.top:443#电信Byoip
+cu.cloudflare.byoip.top:443#联通Byoip
+cm.cloudflare.byoip.top:443#移动Byoip
+
 172.64.229.59:2053#JP 电信优选1
 172.64.229.99:2096#JP 电信优选2
 172.64.229.143:2087#JP 电信优选3
