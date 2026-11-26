@@ -111,6 +111,8 @@ payload:
   - DOMAIN-SUFFIX,xxbgwypx.cc
   - DOMAIN-SUFFIX,lazycat.wiki
   - DOMAIN-SUFFIX,simular.ai
+  - DOMAIN-SUFFIX,letsencrypt.org
+  - DOMAIN-SUFFIX,lencr.org
 
   # --- TorrentKitty 系列 (10) ---
   - DOMAIN-SUFFIX,torrentkitty.com
