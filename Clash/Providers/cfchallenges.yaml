@@ -1,3 +1,4 @@
-# --- CF盾规则 ---
-DOMAIN-SUFFIX,challenges.cloudflare.com
-DOMAIN-SUFFIX,static.cloudflareinsights.com
+payload:
+  # --- CF盾规则 ---
+  - DOMAIN-SUFFIX,challenges.cloudflare.com
+  - DOMAIN-SUFFIX,static.cloudflareinsights.com
